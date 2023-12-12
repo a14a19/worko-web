@@ -40,14 +40,26 @@ function Header() {
                     </a>
                 </div>
                 <div className="flex md:hidden">
-                    <button
-                        type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-                        onClick={() => setMobileMenuOpen(true)}
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                    </button>
+                    {
+                        mobileMenuOpen ?
+                            <button
+                                type="button"
+                                className="-m-2.5 rounded-md p-2.5"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                <span className="sr-only">Close menu</span>
+                                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            </button>
+                            :
+                            <button
+                                type="button"
+                                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+                                onClick={() => setMobileMenuOpen(true)}
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                            </button>
+                    }
                 </div>
                 <Popover.Group className="hidden md:flex md:gap-x-8">
                     {/* <Popover className="relative">
@@ -126,9 +138,48 @@ function Header() {
             {
                 mobileMenuOpen
                 &&
-                <div className="md:hidden w-full h-full" onClick={() => setMobileMenuOpen(false)}>
-                    <div className='absolute top-0 z-40'>
-                        THIS IS MY CLASS
+                <div className="md:hidden w-full absolute bottom-100 right-0 left-0 z-30" style={{ height: "calc(100vh - 125px)" }}>
+                    <div className='z-30 mt-5 divide-y divide-gray-500/10 bg-[#121218] rounded-3xl h-full flex justify-between flex-col'>
+                        <div className="space-y-2 py-6">
+                            <a
+                                href="#"
+                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="#"
+                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+                            >
+                                Integrations
+                            </a>
+                            <a
+                                href="#"
+                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+                            >
+                                Pricing
+                            </a>
+                            <a
+                                href="#"
+                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+                            >
+                                Docs
+                            </a>
+                            <a
+                                href="#"
+                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+                            >
+                                Changelog
+                            </a>
+                        </div>
+                        <div className="py-6">
+                            <a
+                                href="#"
+                                className="-mx-3 block rounded-lg mx-6 py-2.5 text-base font-semibold leading-7 hover:text-white"
+                            >
+                                Log in
+                            </a>
+                        </div>
                     </div>
                 </div>
             }
