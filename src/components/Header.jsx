@@ -9,7 +9,8 @@ import {
     SquaresPlusIcon,
     XMarkIcon
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
+import { Link } from "react-router-dom";
 
 const products = [
     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -31,13 +32,13 @@ function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="bg-[#87878713] backdrop-blur max-w-[1140px] sticky top-0 rounded-full z-20 mx-auto mt-2 shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)]">
+        <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)] mx-5">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-3" aria-label="Global">
                 <div className="flex me-5">
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <Link to="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Worko</span>
                         <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex md:hidden">
                     {
@@ -113,9 +114,9 @@ function Header() {
                         </Transition>
                     </Popover> */}
 
-                    <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
+                    <Link to="/" className="text-sm font-semibold leading-6 hover:text-white">
                         Home
-                    </a>
+                    </Link>
                     <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
                         Integrations
                     </a>
