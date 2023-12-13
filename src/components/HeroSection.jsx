@@ -1,5 +1,6 @@
-import { SparklesIcon, HomeIcon, ChartBarIcon, CubeIcon, UserGroupIcon, DocumentIcon, SwatchIcon, TagIcon, Cog8ToothIcon, BellIcon, ChevronDownIcon, Bars3Icon, MagnifyingGlassIcon, CalendarIcon } from '@heroicons/react/24/outline';
-import { LockClosedIcon, EllipsisHorizontalIcon, ListBulletIcon } from '@heroicons/react/24/solid';
+import { SparklesIcon} from '@heroicons/react/24/outline';
+import HeroBannerCodeArea from './sub-components/HeroBannerCodeArea';
+
 
 function HeroSection() {
     return (
@@ -22,7 +23,8 @@ function HeroSection() {
                     <button className='ms-2 text-base font-semibold hover:bg-[#933aff20] text-white rounded-full px-5 py-3'>See how it works</button>
                 </div>
             </div>
-            <div className='w-full h-[640px]'>
+            <HeroBannerCodeArea />
+            {/* <div className='w-full h-[640px]'>
                 <div className='bg-[##09090f] flex justify-between items-center w-full py-2 px-4 border border-1 border-gray-900 rounded-t-lg'>
                     <div className='flex'>
                         <div className='w-3 aspect-square bg-[#ee6a5f] rounded-full mx-1'></div>
@@ -147,7 +149,7 @@ function HeroSection() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </aside>
     )
 }
