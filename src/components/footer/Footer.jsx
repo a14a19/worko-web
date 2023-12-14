@@ -43,30 +43,42 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Company</h3>
           <ul>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Blog</li>
+            <li className="hover:text-gray-100">
+              <Link to="#">
+                About Us
+              </Link>
+            </li>
+            <li className="hover:text-gray-100">
+              <Link to="#">
+                Contact
+              </Link>
+            </li>
+            <li className="hover:text-gray-100">
+              <Link to="#">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer-column">
           <h3>Resources</h3>
           <ul>
-            <li>
+            <li className="hover:text-gray-100">
               <Link to="/legal/dpa">
                 DPA
               </Link>
             </li>
-            <li>
+            <li className="hover:text-gray-100">
               <Link to="/legal/privacy-policies">
                 Privacy Policy
               </Link>
             </li>
-            <li>
+            <li className="hover:text-gray-100">
               <Link to="/legal/terms-of-services">
                 Terms of Service
               </Link>
             </li>
-            <li>
+            <li className="hover:text-gray-100">
               <Link to="/legal/report-vulnerability">
                 Report a Vulnerability
               </Link>
