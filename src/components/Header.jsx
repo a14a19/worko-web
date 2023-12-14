@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import { Popover } from '@headlessui/react'
-import {
-    Bars3Icon,
-    XMarkIcon
-} from '@heroicons/react/24/outline'
+import { useState } from "react";
+import { Popover } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import { PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import { Link } from "react-router-dom";
 
@@ -24,41 +21,47 @@ import { Link } from "react-router-dom";
 // }
 
 function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    return (
-        <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)] mx-5">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-3" aria-label="Global">
-                <div className="flex me-5">
-                    <Link to="/" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Worko</span>
-                        <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-                    </Link>
-                </div>
-                <div className="flex md:hidden">
-                    {
-                        mobileMenuOpen ?
-                            <button
-                                type="button"
-                                className="-m-2.5 rounded-md p-2.5"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                <span className="sr-only">Close menu</span>
-                                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                            </button>
-                            :
-                            <button
-                                type="button"
-                                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-                                onClick={() => setMobileMenuOpen(true)}
-                            >
-                                <span className="sr-only">Open main menu</span>
-                                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                            </button>
-                    }
-                </div>
-                <Popover.Group className="hidden md:flex md:gap-x-8">
-                    {/* <Popover className="relative">
+  return (
+    <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)] mx-5">
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-3"
+        aria-label="Global"
+      >
+        <div className="flex me-5">
+          <Link to="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Worko</span>
+            <img
+              className="h-8 w-auto"
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              alt=""
+            />
+          </Link>
+        </div>
+        <div className="flex md:hidden">
+          {mobileMenuOpen ? (
+            <button
+              type="button"
+              className="-m-2.5 rounded-md p-2.5"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <span className="sr-only">Close menu</span>
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          )}
+        </div>
+        <Popover.Group className="hidden md:flex md:gap-x-8">
+          {/* <Popover className="relative">
                         <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
                             Product
                             <ChevronDownIcon className="h-5 w-5 flex-none" aria-hidden="true" />
@@ -109,77 +112,96 @@ function Header() {
                         </Transition>
                     </Popover> */}
 
-                    <Link to="/" className="text-sm font-semibold leading-6 hover:text-white">
-                        Home
-                    </Link>
-                    <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
-                        Integrations
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
-                        Pricing
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
-                        Docs
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
-                        Changelog
-                    </a>
-                </Popover.Group>
-                <div className="hidden md:flex md:flex-1 md:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 hover:text-white">
-                        Log in <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
-            </nav>
-            {
-                mobileMenuOpen
-                &&
-                <div className="md:hidden w-full absolute bottom-100 right-0 left-0 z-30" style={{ height: "calc(100vh - 125px)" }}>
-                    <div className='z-30 mt-5 divide-y divide-gray-500/10 bg-[#121218] rounded-3xl h-full flex justify-between flex-col overflow-auto'>
-                        <div className="space-y-2 py-6">
-                            <a
-                                href="#"
-                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-                            >
-                                Home
-                            </a>
-                            <a
-                                href="#"
-                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-                            >
-                                Integrations
-                            </a>
-                            <a
-                                href="#"
-                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-                            >
-                                Pricing
-                            </a>
-                            <a
-                                href="#"
-                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-                            >
-                                Docs
-                            </a>
-                            <a
-                                href="#"
-                                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-                            >
-                                Changelog
-                            </a>
-                        </div>
-                        <div className="py-6">
-                            <a
-                                href="#"
-                                className="-mx-3 block rounded-lg mx-6 py-2.5 text-base font-semibold leading-7 hover:text-white"
-                            >
-                                Log in
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            }
-            {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+          <Link
+            to="/"
+            className="text-sm font-semibold leading-6 hover:text-white"
+          >
+            Home
+          </Link>
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 hover:text-white"
+          >
+            Integrations
+          </a>
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 hover:text-white"
+          >
+            Pricing
+          </a>
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 hover:text-white"
+          >
+            Docs
+          </a>
+          <Link
+            to="/changelog"
+            className="text-sm font-semibold leading-6 hover:text-white"
+          >
+            Changelog
+          </Link>
+        </Popover.Group>
+        <div className="hidden md:flex md:flex-1 md:justify-end">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 hover:text-white"
+          >
+            Log in <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </nav>
+      {mobileMenuOpen && (
+        <div
+          className="md:hidden w-full absolute bottom-100 right-0 left-0 z-30"
+          style={{ height: "calc(100vh - 125px)" }}
+        >
+          <div className="z-30 mt-5 divide-y divide-gray-500/10 bg-[#121218] rounded-3xl h-full flex justify-between flex-col overflow-auto">
+            <div className="space-y-2 py-6">
+              <a
+                href="#"
+                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+              >
+                Integrations
+              </a>
+              <a
+                href="#"
+                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+              >
+                Pricing
+              </a>
+              <a
+                href="#"
+                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+              >
+                Docs
+              </a>
+              <Link
+                to="/changelog"
+                className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+              >
+                Changelog
+              </Link>
+            </div>
+            <div className="py-6">
+              <a
+                href="#"
+                className="-mx-3 block rounded-lg mx-6 py-2.5 text-base font-semibold leading-7 hover:text-white"
+              >
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-30" />
                 <Dialog.Panel className="fixed inset-0 right-5 z-30 w-full overflow-y-auto bg-[#121218] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10  rounded-3xl">
                     <div className="flex items-center justify-between">
@@ -246,8 +268,8 @@ function Header() {
                     </div>
                 </Dialog.Panel>
             </Dialog> */}
-        </header>
-    )
+    </header>
+  );
 }
 
-export default Header
+export default Header;
