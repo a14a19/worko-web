@@ -1,125 +1,36 @@
-import { CheckCircleIcon, HandThumbUpIcon } from '@heroicons/react/24/outline';
+import PlanningContentDevCard from "../shared/PlanningContentDevCard"
+import { imageOverlappingWithText } from "../../data/heroBannerData.js";
+import HeroBannerCodeAreaSmallSubHeading from '../shared/HeroBannerCodeAreaSmallSubHeading.jsx';
+import HeroBannerCodeAreaCard from '../shared/HeroBannerCodeAreaCard.jsx';
 
-function OrganizeWithEaseCard() {
+function OrganizeWithEaseCard({ title }) {
     return (
-        <div className="lg:w-6/12 w-full h-[448px] flex-[1_0_0%] flex items-center justify-center bg-[#121218] rounded-2xl p-20">
-            <div className="text-xs w-[426px] h-[272px] flex justify-between items-start flex-col overflow-hidden">
-                <div className='flex gap-2 items-start flex-col justify-start w-full'>
-                    <h4>Planning</h4>
-                    <div className='w-full'>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                        <div className='flex items-center justify-start'>
-                            <div className='flex items-center justify-between w-[286px] me-3'>
-                                <div className='flex'>
-                                    <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create messaging structure</p>
-                                    <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>2</p>
-                                </div>
-                                <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
-                            </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
-                                Mar1-10
-                            </div>
-                            <div className='ms-2'>
-                                <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
-                            </div>
+        <div className="lg:w-6/12 w-full h-[448px] flex-[1_0_0%] flex items-center md-small:justify-center justify-start overflow-hidden bg-[#121218] rounded-2xl lg:p-0 p-20">
+            <div className="text-xs w-[426px] h-[272px] flex justify-between items-start flex-col">
+
+                {title === "Organize with Ease" && <PlanningContentDevCard />}
+
+                {title === "Visual Task Progression" && <PlanningContentDevCard />}
+
+                {title === "Team Task Simplification" &&
+                    <div className='flex justify-start items-start w-full gap-5'>
+                        <div className='w-full flex justify-start items-center flex-col gap-2.5'>
+                            <HeroBannerCodeAreaSmallSubHeading mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] px-3 py-1 rounded-lg border border-gray-800" circleClasses="w-4 h-4 aspect-square flex justify-center items-center ms-2  bg-[#fabe24] text-[0.5rem] rounded-full text-black" title="Doing" addBtn="true" />
+
+                            <HeroBannerCodeAreaSmallSubHeading mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] px-3 py-1 rounded-lg border border-gray-800" circleClasses="w-4 h-4 aspect-square flex justify-center items-center ms-2  bg-[#fabe24] text-[0.5rem] rounded-full text-black" title="Doing" addBtn="false" />
+
+                            <HeroBannerCodeAreaCard mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] p-3 rounded-lg gap-3 flex-col" tags={{ tag1: "Wire frame", tag2: "UI Design" }} tag1Class="text-[0.6rem] py-1 px-2 border border-gray-600 rounded-2xl bg-gray-800 flex items-center me-2 min-h-min" tag2Class="text-[0.6rem] py-1 px-2 border border-[#60A5F950] rounded-2xl bg-[#1e3a8a29] flex items-center text-[#60A5F9] min-h-min" dot1Class="me-2 w-1 h-1 rounded-full bg-gray-300" dot2Class="me-2 w-1 h-1 rounded-full bg-[#60A5F9]" title="UI Design" para="This page showing user list for this product" subTask={{ value: 2, total: 10, color: "bg-[#fabe24]" }} imageData={imageOverlappingWithText} />
                         </div>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                        <div className='flex items-center justify-start'>
-                            <div className='flex items-center justify-between w-[286px] me-3'>
-                                <div className='flex'>
-                                    <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Compose project outline</p>
-                                </div>
-                                <img src="https://framerusercontent.com/images/H8hcvVEBapY8RrScL76c1JgKY.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
-                            </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
-                                Mar5-15
-                            </div>
-                            <div className='ms-2'>
-                                <div className='bg-[#fc8181] w-[32px] h-[4px] rounded-md'></div>
-                            </div>
+                        <div className='w-full flex justify-start items-center flex-col gap-2.5'>
+                            <HeroBannerCodeAreaSmallSubHeading mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] px-3 py-1 rounded-lg border border-gray-800" circleClasses="w-4 h-4 aspect-square flex justify-center items-center ms-2  bg-[#a68af8] text-[0.5rem] rounded-full text-black" title="In Review" addBtn="true" />
+
+                            <HeroBannerCodeAreaSmallSubHeading mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] px-3 py-1 rounded-lg border border-gray-800" circleClasses="w-4 h-4 aspect-square flex justify-center items-center ms-2  bg-[#a68af8] text-[0.5rem] rounded-full text-black" title="In Review" addBtn="false" />
+
+                            <HeroBannerCodeAreaCard mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] p-3 rounded-lg gap-3 flex-col" tags={{ tag1: "Wire frame", tag2: "UI Design" }} tag1Class="text-[0.6rem] py-1 px-2 border border-[#a68af850] rounded-2xl bg-[#4b1d9229] flex items-center me-2 text-[#a68af8] min-h-min" tag2Class="text-[0.6rem] py-1 px-2 border border-[#60A5F950] rounded-2xl bg-[#1e3a8a29] flex items-center text-[#60A5F9] min-h-min" dot1Class="me-2 w-1 h-1 rounded-full bg-gray-300" dot2Class="me-2 w-1 h-1 rounded-full bg-[#60A5F9]" title="FAQ list" para="This page showing FAQ for this product" subTask={{ value: 2, total: 10, color: "bg-[#a68af8]" }} imageData={imageOverlappingWithText} />
+
+                            <HeroBannerCodeAreaCard mainClasses="text-xs flex justify-between items-center w-full bg-[#181821] p-3 rounded-lg gap-3 flex-col" tags={{ tag1: "Wire frame", tag2: "UI Design" }} tag1Class="text-[0.6rem] py-1 px-2 border border-[#a68af850] rounded-2xl bg-[#4b1d9229] flex items-center me-2 text-[#a68af8]" tag2Class="text-[0.6rem] py-1 px-2 border border-[#60A5F950] rounded-2xl bg-[#1e3a8a29] flex items-center text-[#60A5F9]" dot1Class="me-2 w-1 h-1 rounded-full bg-gray-300" dot2Class="me-2 w-1 h-1 rounded-full bg-[#60A5F9]" title="Help center" para="This page showing help center for this product" subTask={{ value: 2, total: 10, color: "bg-[#a68af8]" }} imageData={imageOverlappingWithText} />
                         </div>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                        <div className='flex items-center justify-start'>
-                            <div className='flex items-center justify-between w-[286px] me-3'>
-                                <div className='flex'>
-                                    <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Execute startup blueprint</p>
-                                    <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>2</p>
-                                </div>
-                                <img src="https://framerusercontent.com/images/zfqFn8UXaNwg9uQ8MHYFDZIJW8.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
-                            </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
-                                Apr12-15
-                            </div>
-                            <div className='ms-2'>
-                                <div className='bg-[#60A5F9] w-[32px] h-[4px] rounded-md'></div>
-                            </div>
-                        </div>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                    </div>
-                </div>
-                <div>
-                    <h4 className=''>Content Development</h4>
-                    <div className='w-full'>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                        <div className='flex items-center justify-start'>
-                            <div className='flex items-center justify-between w-[286px] me-3'>
-                                <div className='flex'>
-                                    <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Hold kickoff meeting</p>
-                                    <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>2</p>
-                                </div>
-                                <img src="https://framerusercontent.com/images/dd62dYQNyyynWEmy6n61i7CltYc.jpg?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
-                            </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
-                                Mar5-12
-                            </div>
-                            <div className='ms-2'>
-                                <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
-                            </div>
-                        </div>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                        <div className='flex items-center justify-start'>
-                            <div className='flex items-center justify-between w-[286px] me-3'>
-                                <div className='flex'>
-                                    <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create marketing materials</p>
-                                </div>
-                                <img src="https://framerusercontent.com/images/5AR5WjJxyvJ43labZsGKHxyRNaw.jpg?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
-                            </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
-                                Apr1-20
-                            </div>
-                            <div className='ms-2'>
-                                <div className='bg-[#fc8181] w-[32px] h-[4px] rounded-md'></div>
-                            </div>
-                        </div>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                        <div className='flex items-center justify-start'>
-                            <div className='flex items-center justify-between w-[286px] me-3'>
-                                <div className='flex'>
-                                    <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Review campaign assets</p>
-                                    <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>12</p>
-                                </div>
-                                <img src="https://framerusercontent.com/images/SiHj8IXtMQ0A70pTrI5LN5msw.jpg?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
-                            </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
-                                Apr1-15
-                            </div>
-                            <div className='ms-2'>
-                                <div className='bg-[#60A5F9] w-[32px] h-[4px] rounded-md'></div>
-                            </div>
-                        </div>
-                        <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
-                    </div>
-                </div>
+                    </div>}
             </div>
         </div>
     )

@@ -8,6 +8,7 @@ export default {
     extend: {
       screens: {
         'lg-header': {'min': '1180px'},
+        'md-small': {'min': '630px'},
       }
     },
   },
