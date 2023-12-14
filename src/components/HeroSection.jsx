@@ -3,10 +3,16 @@ import HeroBannerCodeArea from './sub-components/HeroBannerCodeArea';
 
 
 function HeroSection() {
+
+    function toggleAnswer(question) {
+        var answer = question.nextElementSibling;
+        answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+    }
+
     return (
         <aside className='max-w-[1140px] min-h-min mx-auto my-20'>
             <div className="h-[486px] flex items-center justify-between flex-col py-20" style={{ backgroundImage: "radial-gradient(38.7% 85.6% at 50% 100%,#7808ff 0%,rgba(3,6,13,0) 100%)" }}>
-                <div className="flex items-center justify-between flex-col gap-y-8 max-w-[720px]">
+                <div className="flex items-center justify-between flex-col gap-y-8 max-w-[720px]" onClick={() => toggleAnswer()}>
                     <button className="flex items-center bg-[#121218] text-xs py-2 px-4 rounded-full shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)]">
                         <SparklesIcon className='h-4 me-3' />
                         Made By Vite + React

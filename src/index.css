@@ -35,9 +35,9 @@ body {
   width: max-content;
   animation: runSlider 55s linear infinite;
 }
-.slider img {
+/* .slider img {
   margin-right: 10px;
-}
+} */
 .slider li {
   width: 150px;
   display: flex;
