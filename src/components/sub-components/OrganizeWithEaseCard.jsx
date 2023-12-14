@@ -2,8 +2,8 @@ import { CheckCircleIcon, HandThumbUpIcon } from '@heroicons/react/24/outline';
 
 function OrganizeWithEaseCard() {
     return (
-        <div className="w-6/12 h-[448px] flex-[1_0_0%] flex items-center justify-center bg-[#121218] rounded-2xl">
-            <div className="text-xs w-[426px] h-[272px] flex justify-between items-start flex-col">
+        <div className="lg:w-6/12 w-full h-[448px] flex-[1_0_0%] flex items-center justify-center bg-[#121218] rounded-2xl p-20">
+            <div className="text-xs w-[426px] h-[272px] flex justify-between items-start flex-col overflow-hidden">
                 <div className='flex gap-2 items-start flex-col justify-start w-full'>
                     <h4>Planning</h4>
                     <div className='w-full'>
@@ -18,7 +18,7 @@ function OrganizeWithEaseCard() {
                                 </div>
                                 <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
                             </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1'>
+                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
                                 Mar1-10
                             </div>
                             <div className='ms-2'>
@@ -30,17 +30,15 @@ function OrganizeWithEaseCard() {
                             <div className='flex items-center justify-between w-[286px] me-3'>
                                 <div className='flex'>
                                     <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create messaging structure</p>
-                                    <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>2</p>
+                                    <p className='text-gray-500'>Compose project outline</p>
                                 </div>
-                                <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
+                                <img src="https://framerusercontent.com/images/H8hcvVEBapY8RrScL76c1JgKY.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
                             </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1'>
-                                Mar1-10
+                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
+                                Mar5-15
                             </div>
                             <div className='ms-2'>
-                                <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
+                                <div className='bg-[#fc8181] w-[32px] h-[4px] rounded-md'></div>
                             </div>
                         </div>
                         <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
@@ -48,17 +46,17 @@ function OrganizeWithEaseCard() {
                             <div className='flex items-center justify-between w-[286px] me-3'>
                                 <div className='flex'>
                                     <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create messaging structure</p>
+                                    <p className='text-gray-500'>Execute startup blueprint</p>
                                     <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
                                     <p className='text-gray-500'>2</p>
                                 </div>
-                                <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
+                                <img src="https://framerusercontent.com/images/zfqFn8UXaNwg9uQ8MHYFDZIJW8.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
                             </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1'>
-                                Mar1-10
+                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
+                                Apr12-15
                             </div>
                             <div className='ms-2'>
-                                <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
+                                <div className='bg-[#60A5F9] w-[32px] h-[4px] rounded-md'></div>
                             </div>
                         </div>
                         <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
@@ -72,14 +70,14 @@ function OrganizeWithEaseCard() {
                             <div className='flex items-center justify-between w-[286px] me-3'>
                                 <div className='flex'>
                                     <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create messaging structure</p>
+                                    <p className='text-gray-500'>Hold kickoff meeting</p>
                                     <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
                                     <p className='text-gray-500'>2</p>
                                 </div>
-                                <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
+                                <img src="https://framerusercontent.com/images/dd62dYQNyyynWEmy6n61i7CltYc.jpg?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
                             </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1'>
-                                Mar1-10
+                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
+                                Mar5-12
                             </div>
                             <div className='ms-2'>
                                 <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
@@ -90,17 +88,15 @@ function OrganizeWithEaseCard() {
                             <div className='flex items-center justify-between w-[286px] me-3'>
                                 <div className='flex'>
                                     <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create messaging structure</p>
-                                    <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>2</p>
+                                    <p className='text-gray-500'>Create marketing materials</p>
                                 </div>
-                                <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
+                                <img src="https://framerusercontent.com/images/5AR5WjJxyvJ43labZsGKHxyRNaw.jpg?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
                             </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1'>
-                                Mar1-10
+                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
+                                Apr1-20
                             </div>
                             <div className='ms-2'>
-                                <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
+                                <div className='bg-[#fc8181] w-[32px] h-[4px] rounded-md'></div>
                             </div>
                         </div>
                         <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
@@ -108,17 +104,17 @@ function OrganizeWithEaseCard() {
                             <div className='flex items-center justify-between w-[286px] me-3'>
                                 <div className='flex'>
                                     <CheckCircleIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>Create messaging structure</p>
+                                    <p className='text-gray-500'>Review campaign assets</p>
                                     <HandThumbUpIcon className='h-4 text-gray-500 mx-2' />
-                                    <p className='text-gray-500'>2</p>
+                                    <p className='text-gray-500'>12</p>
                                 </div>
-                                <img src="https://framerusercontent.com/images/iTLjczQGRrbn8igTC8WGlsKrzDk.png?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
+                                <img src="https://framerusercontent.com/images/SiHj8IXtMQ0A70pTrI5LN5msw.jpg?scale-down-to=512" alt="" className='h-5 w-5 rounded-full object-cover aspect-square my-1' />
                             </div>
-                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1'>
-                                Mar1-10
+                            <div className='text-gray-500 px-3 border-x-[0.1rem] border-gray-900 h-full py-1 w-[80px]'>
+                                Apr1-15
                             </div>
                             <div className='ms-2'>
-                                <div className='bg-[#a68af8] w-[32px] h-[4px] rounded-md'></div>
+                                <div className='bg-[#60A5F9] w-[32px] h-[4px] rounded-md'></div>
                             </div>
                         </div>
                         <div className='w-full h-[0.1rem] bg-[#ffffff0f]'></div>
