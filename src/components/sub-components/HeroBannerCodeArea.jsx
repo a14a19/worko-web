@@ -26,7 +26,7 @@ function HeroBannerCodeArea() {
                 <div className='w-[72px] h-full hidden md:flex justify-between items-center flex-col border border-gray-900'>
                     <div className='flex justify-between items-center flex-col w-full'>
                         <div className='mt-6 mb-8'>
-                            <img src="https://framerusercontent.com/images/6roiDdrqmas4HzNCgAEhhoNknA.png" alt="Worko" width={"24"} />
+                            <img src="https://ugc.production.linktr.ee/83ebb150-33fc-4639-8f2b-0bd315a84a1b_Worko.jpeg?io=true&size=avatar-v1_0" alt="Worko" width={"24"} />
                         </div>
                         <div className=''>
                             <span className='uppercase text-[11px] text-gray-400'>MENU</span>

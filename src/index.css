@@ -10,8 +10,8 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.8);
   /* background-color: #933aff88; */
-  background-color: #09090f;
-
+  background-color: #09090F;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #09090F;
   /* display: flex; */
   /* place-items: center; */
   /* min-width: 320px; */
