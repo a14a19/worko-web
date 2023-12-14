@@ -33,7 +33,7 @@ function Header() {
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Worko</span>
             <img
-              className="h-8 w-auto"
+              className="h-8 w-auto rounded-full"
               src="https://ugc.production.linktr.ee/83ebb150-33fc-4639-8f2b-0bd315a84a1b_Worko.jpeg?io=true&size=avatar-v1_0"
               alt=""
             />

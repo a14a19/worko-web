@@ -8,6 +8,7 @@ import Dpa from "../components/resources/Dpa";
 import PrivacyPolicy from "../components/resources/PrivacyPolicy";
 import TermsOfServices from "../components/resources/TermsOfServices";
 import ReportVulnerability from "../components/resources/ReportVulnerability";
+import Footer from "../components/footer/Footer";
 
 function Main() {
     return (
@@ -23,6 +24,7 @@ function Main() {
                 <Route exact path="legal/terms-of-services" element={<TermsOfServices />} />
                 <Route exact path="legal/report-vulnerability" element={<ReportVulnerability />} />
             </Routes>
+            <Footer />
         </>
     )
 }

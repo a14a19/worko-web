@@ -50,7 +50,7 @@
 
 .left-side-info {
   place-content: center;
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
   flex-flow: column;
@@ -65,7 +65,7 @@
 
 .categories {
   font-size: 0.8rem;
-  place-content: start;
+  place-content: flex-start;
   align-items: center;
   backdrop-filter: blur(12px);
   background-color: rgba(130, 72, 255, 0.096);
