@@ -1,7 +1,7 @@
 // App.jsx
 import React from "react";
 import "./Changelog.css";
-import myImage from "../../assets/wokoLogo.webp";
+import myImage from "../../assets/logo.JPG";
 
 function App() {
   const gradientStyle = {
@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="black-page mt-20 mb-20">
+    <div className="black-page mt-16 max-w-[1140px] mb-20 mx-auto">
       <h1
         className={`changelog-heading gradient-heading`}
         style={gradientStyle}
@@ -21,7 +21,7 @@ function App() {
       </h1>
       <p className="new-updates">New updates and improvements to Worko</p>
 
-      <img src={myImage} alt="Logo" />
+      <img className="image" src={myImage} alt="Logo" />
 
       <div className="update-main">
         <div className="dates">October 13, 2023</div>
@@ -67,7 +67,7 @@ function App() {
         </div>
       </div>
 
-      <img src={myImage} alt="Logo" />
+      <img className="image" src={myImage} alt="Logo" />
 
       <div className="update-main">
         <div className="dates">October 13, 2023</div>
@@ -112,7 +112,7 @@ function App() {
         </div>
       </div>
 
-      <img src={myImage} alt="Logo" />
+      <img className="image" src={myImage} alt="Logo" />
 
       <div className="update-main">
         <div className="dates">October 13, 2023</div>
@@ -159,7 +159,7 @@ function App() {
         </div>
       </div>
 
-      <img src={myImage} alt="Logo" />
+      <img className="image" src={myImage} alt="Logo" />
 
       <div className="update-main">
         <div className="dates">October 13, 2023</div>
@@ -194,7 +194,7 @@ function App() {
         </div>
       </div>
 
-      <img src={myImage} alt="Logo" />
+      <img className="image" src={myImage} alt="Logo" />
 
       <div className="update-main">
         <div className="dates">October 13, 2023</div>
@@ -233,7 +233,7 @@ function App() {
         </div>
       </div>
 
-      <img src={myImage} alt="Logo" />
+      <img className="image" src={myImage} alt="Logo" />
 
       <div className="update-main">
         <div className="dates">October 13, 2023</div>

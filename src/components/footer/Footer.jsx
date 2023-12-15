@@ -5,11 +5,9 @@ import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-// ... rest of the code
-
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-16 max-w-[1140px] mb-20 mx-auto">
       {/* Newsletter Box */}
       <div className="newsletter-box">
         <div className="subscribe-heading">Subscribe to Newsletter</div>
