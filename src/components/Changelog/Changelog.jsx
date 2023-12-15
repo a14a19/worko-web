@@ -1,7 +1,7 @@
 // App.jsx
 import React from "react";
 import "./Changelog.css";
-import myImage from "../../assets/logo.JPG";
+import myImage from "../../assets/logo.jpg";
 
 function App() {
   const gradientStyle = {
