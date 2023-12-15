@@ -19,7 +19,7 @@ function SubSectionWithCardHome({ title, heading, description, left }) {
 
                 <p className="text-start text-base text-gray-400">{description}</p>
 
-                <button className="my-8 bg-[#1b1b21] px-8 py-3 rounded-3xl text-lg font-semibold flex items-center shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)] hover:bg-[#1b1b21]" >Get Free Trail <ArrowRightCircleIcon className='h-6 text-inherit ms-2' /></button>
+                <button className="my-8 bg-[#1b1b21] px-8 py-3 rounded-3xl text-lg font-semibold flex items-center shadow-[inset_0px_1px_0px_0px_rgba(225,225,225,0.1)] hover:bg-[#1b1b21]" >Get Free Trail <ArrowRightCircleIcon className='h-6 text-inherit ms-2' /></button>
             </div>
         </div>
     )

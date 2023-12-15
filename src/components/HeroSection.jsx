@@ -11,7 +11,7 @@ function HeroSection() {
 
     return (
         <aside className='max-w-[1140px] min-h-min mx-auto my-20'>
-            <div className="h-[486px] flex items-center justify-between flex-col py-20" style={{ backgroundImage: "radial-gradient(38.7% 85.6% at 50% 100%,#7808ff 0%,rgba(3,6,13,0) 100%)" }}>
+            <div className="h-[486px] flex items-center justify-between flex-col py-20" style={{ backgroundImage: "radial-gradient(50.0% 85.0% at 50% 100%,rgb(120 8 255 / 70%) 0%,rgba(3,6,13,0) 70%)" }}>
                 <div className="flex items-center justify-between flex-col gap-y-8 max-w-[720px]" onClick={() => toggleAnswer()}>
                     <button className="flex items-center bg-[#121218] text-xs py-2 px-4 rounded-full shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)]">
                         <SparklesIcon className='h-4 me-3' />

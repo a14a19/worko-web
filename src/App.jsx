@@ -4,7 +4,7 @@ import Main from "./pages/Main";
 
 function App() {
   return (
-    <main className="">
+    <main className="px-5">
       <Routes>
         <Route path="*" element={<Main />} />
       </Routes>
