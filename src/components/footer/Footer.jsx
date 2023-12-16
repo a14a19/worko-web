@@ -4,6 +4,7 @@ import React from "react";
 import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import workoIcon from "../../assets/worko.webp";
 
 const Footer = () => {
   return (
@@ -26,8 +27,11 @@ const Footer = () => {
 
       {/* Four-Column Footer */}
       <div className="footer-container">
-        <div className="footer-column">
-          <p className="wheading">Worko</p>
+        <div className="footer-column flex justify-start items-start">
+          <img src={workoIcon} alt="" className="h-8 aspect-square me-3 rounded-full"/>
+          <p className="wheading">
+            Worko
+          </p>
         </div>
         <div className="footer-column">
           <h3>Product</h3>

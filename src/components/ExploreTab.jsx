@@ -42,8 +42,7 @@ function ExploreTab() {
                             <Tab.Panel
                                 key={idx}
                                 className={classNames(
-                                    'rounded-xl bg-[#121218] p-3',
-                                    'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
+                                    'rounded-xl bg-[#121218] p-3'
                                 )}
                             >
                                 <div className='flex lg:flex-row flex-col'>

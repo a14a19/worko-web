@@ -24,7 +24,7 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)] mx-5">
+    <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_1px_0px_0px_rgba(225,225,225,0.1)] mx-5">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-3"
         aria-label="Global"

@@ -36,16 +36,10 @@ body {
   width: max-content;
   animation: runSlider 55s linear infinite;
 }
-/* .slider img {
-  margin-right: 10px;
+/* .slider li > img {
+  height: 10px;
 } */
 .slider li {
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  padding: 10px 0 10px 10px;
-  margin-right: 5px;
 }
 .slider {
   overflow: hidden;
