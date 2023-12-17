@@ -68,7 +68,7 @@ function ExploreTab() {
                                                 </div>
                                                 <button className="my-8 bg-[#1b1b21] px-8 py-3 rounded-3xl text-lg font-semibold flex items-center shadow-[inset_0px_1px_0px_0px_rgba(225,225,225,0.1)] hover:bg-[#1b1b21]" >Get Free Trail <ArrowRightCircleIcon className='h-6 text-inherit ms-2' /></button>
                                             </div>
-                                            <div className='lg:w-6/12 w-full bg-[#09090f] rounded-lg ps-7 pt-7 overflow-hidden'>
+                                            <div className='lg:w-6/12 w-full flex md-lg-card:justify-center justify-start bg-[#09090f] max-h-[448px] rounded-lg ps-7 pt-7 overflow-hidden'>
                                                 {post.tab === "marketingTeams" && <MarketingTeamsRightSide tab={post.tab} />}
                                                 {post.tab === "itTeams" && <MarketingTeamsRightSide tab={post.tab} />}
                                                 {post.tab === "operations" && <MarketingTeamsRightSide tab={post.tab} />}

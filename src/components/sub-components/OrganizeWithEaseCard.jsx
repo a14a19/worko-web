@@ -2,6 +2,7 @@ import PlanningContentDevCard from "../shared/PlanningContentDevCard"
 import { imageOverlappingWithText } from "../../data/heroBannerData.js";
 import HeroBannerCodeAreaSmallSubHeading from '../shared/HeroBannerCodeAreaSmallSubHeading.jsx';
 import HeroBannerCodeAreaCard from '../shared/HeroBannerCodeAreaCard.jsx';
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 function OrganizeWithEaseCard({ title }) {
     return (
@@ -10,7 +11,58 @@ function OrganizeWithEaseCard({ title }) {
 
                 {title === "Organize with Ease" && <PlanningContentDevCard />}
 
-                {title === "Visual Task Progression" && <PlanningContentDevCard />}
+                {title === "Visual Task Progression" &&
+                    <div className="flex justify-start items-start w-full max-w-[398px] flex-col gap-3 overflow-hidden relative">
+                        <div className="flex w-full">
+                            <div className="w-6/12 min-w-[200px]">March</div>
+                            <div className="w-6/12 min-w-[200px]">April</div>
+                        </div>
+                        <div className="flex h-[500px] border-t-2 border-gray-900 ">
+                            <div className="w-[90px] border-e-2 border-gray-900"></div>
+                            <div className="w-[90px] border-e-2 border-gray-900"></div>
+                            <div className="w-[90px] border-e-2 border-gray-900"></div>
+                            <div className="w-[90px] border-e-2 border-gray-900"></div>
+                            <div className="w-[90px] border-e-2 border-gray-900"></div>
+                            <div className="w-[90px] border-e-2 border-gray-900"></div>
+                            <div className="flex items-center absolute top-10 left-0 bg-[#fc8181] rounded-md px-2 py-1 gap-1">
+                                <CheckCircleIcon className="h-4 text-black" />
+                                <div className="text-black text-[0.75rem]">
+                                    Write campaign brief
+                                </div>
+                            </div>
+                            <div className="flex items-center absolute top-24 left-0 bg-[#a68af8] rounded-md px-2 py-1 gap-1">
+                                <CheckCircleIcon className="h-4 text-black" />
+                                <div className="text-black text-[0.75rem]">
+                                    Develop messaging framerwork
+                                </div>
+                            </div>
+                            <div className="flex items-center absolute top-48 left-0 bg-[#fabe24] rounded-md px-2 py-1 gap-1">
+                                <CheckCircleIcon className="h-4 text-black" />
+                                <div className="text-black text-[0.75rem]">
+                                    Develop messaging framerwork
+                                </div>
+                            </div>
+                            <div className="flex items-center absolute top-16 left-60 bg-[#60a5f9] rounded-md px-2 py-1 gap-1">
+                                <CheckCircleIcon className="h-4 text-black" />
+                                <div className="text-black text-[0.75rem]">
+                                    Write campaign brief
+                                </div>
+                            </div>
+                            <div className="flex items-center absolute top-36 left-52 bg-[#e973bb] rounded-md px-2 py-1 gap-1">
+                                <CheckCircleIcon className="h-4 text-black" />
+                                <div className="text-black text-[0.75rem]">
+                                    Create marketing materials
+                                </div>
+                            </div>
+                            <div className="flex items-center absolute top-60 left-56 bg-[#a2e435] rounded-md px-2 py-1 gap-1">
+                                <CheckCircleIcon className="h-4 text-black" />
+                                <div className="text-black text-[0.75rem]">
+                                    Review campaign assets
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
 
                 {title === "Team Task Simplification" &&
                     <div className='flex justify-start items-start w-full gap-5'>

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import { Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import { PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 // const products = [
 //     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -21,10 +22,22 @@ import { Link } from "react-router-dom";
 // }
 
 function Header() {
+  const animaton = useRef(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+        gsap.from(animaton.current, {
+            opacity: 0,
+            duration: 0.5,
+        })
+    })
+
+    return () => ctx.revert();
+}, [])
+
   return (
-    <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_1px_0px_0px_rgba(225,225,225,0.1)] mx-5">
+    <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_1px_0px_0px_rgba(225,225,225,0.1)] mx-5" ref={animaton}>
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-3"
         aria-label="Global"
@@ -124,18 +137,18 @@ function Header() {
           >
             Integrations
           </Link>
-          <a
-            href="#"
+          <Link
+            to="/"
             className="text-sm font-semibold leading-6 hover:text-white"
           >
             Pricing
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/"
             className="text-sm font-semibold leading-6 hover:text-white"
           >
             Docs
-          </a>
+          </Link>
           <Link
             to="/changelog"
             className="text-sm font-semibold leading-6 hover:text-white"
@@ -144,12 +157,12 @@ function Header() {
           </Link>
         </Popover.Group>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="text-sm font-semibold leading-6 hover:text-white"
           >
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
       {mobileMenuOpen && (
@@ -159,44 +172,50 @@ function Header() {
         >
           <div className="z-30 mt-5 divide-y divide-gray-500/10 bg-[#121218] rounded-3xl h-full flex justify-between flex-col overflow-auto">
             <div className="space-y-2 py-6">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Home
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/integration"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-              >
+                onClick={() => setMobileMenuOpen(false)}
+                >
                 Integrations
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-              >
+                onClick={() => setMobileMenuOpen(false)}
+                >
                 Pricing
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-              >
+                onClick={() => setMobileMenuOpen(false)}
+                >
                 Docs
-              </a>
+              </Link>
               <Link
                 to="/changelog"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
-              >
+                onClick={() => setMobileMenuOpen(false)}
+                >
                 Changelog
               </Link>
             </div>
             <div className="py-6">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="-mx-3 block rounded-lg mx-6 py-2.5 text-base font-semibold leading-7 hover:text-white"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Log in
-              </a>
+              </Link>
             </div>
           </div>
         </div>
