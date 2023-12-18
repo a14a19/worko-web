@@ -3,7 +3,7 @@ import "./Resources.css";
 function Dpa() {
     return (
         <div style={{ backgroundColor: '#09090F', minHeight: 'auto', width: 'auto', padding: '0', margin: '0', boxSizing: 'border-box' }}>
-            <div style={{ padding: "10vw", marginLeft: '10vw' }} >
+            <div style={{ padding: "10vw 0", maxWidth: "1140px", margin: "auto" }} >
                 <h1 style={{ color: "#FFFFFF", fontSize: '35px', fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif' }}>Data Processing Agreement</h1>
                 <p className='para'>Date: September 27, 2023<br /><br />
                     This Data Processing Agreement (the &quot;Agreement&quot;) is entered into by and between:<div />

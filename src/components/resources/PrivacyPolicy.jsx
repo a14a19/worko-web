@@ -3,7 +3,7 @@ import "./Resources.css";
 function PrivacyPolicy() {
     return (
         <div style={{ backgroundColor: '#09090F', minHeight: 'auto', width: 'auto', padding: '0', margin: '0', boxSizing: 'border-box' }}>
-            <div style={{ padding: "10vw", marginLeft: '10vw' }} >
+            <div style={{ padding: "10vw 0", maxWidth: "1140px", margin: "auto" }} >
                 <h1 style={{ color: "#FFFFFF", fontSize: '35px', fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif' }}>Privacy Policy</h1>
                 <p className='para'>Date: September 27, 2023</p>
                 <h2 className='title'>Introduction</h2>
