@@ -138,7 +138,7 @@ function Header() {
             Integrations
           </Link>
           <Link
-            to="/"
+            to="/pricing"
             className="text-sm font-semibold leading-6 hover:text-white"
           >
             Pricing
@@ -187,7 +187,7 @@ function Header() {
                 Integrations
               </Link>
               <Link
-                to="/"
+                to="/pricing"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
                 >

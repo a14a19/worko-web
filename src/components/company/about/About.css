@@ -1,0 +1,238 @@
+.cont{
+    margin-top: -101px;
+    background-color: rgb(9, 9, 15);
+    height: auto;
+    width: 100%;
+}
+.top{
+    margin-left: 153px;
+    margin-top: 100px;
+    color: white;
+    padding-top: 10pc;
+}
+.top p{
+    color:  rgb(134, 36, 255);
+}
+.top1{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    
+}
+.top1 h1{
+    font-size: 40px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+}
+.top1 p{
+    color:  #ffffff;
+}
+.top2{
+    margin-top:62px ;
+    margin-left: -80px;
+
+}
+.top2 p{
+    color: gainsboro;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.pic {
+    text-align: center;
+    margin-top: 50px;
+}
+.pic img{
+    width: 81%;
+    height: 347px;
+    border-radius: 30px;
+    border-color: 1px solid burlywood;
+   
+
+}
+.top3{
+    display: flex;
+    /* color: #ffffff; */
+    justify-content: space-around;
+    height: 200px;
+    margin-top: 10px;
+    color: rgb(97, 100, 107);
+    font-size: 25px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 93px;
+
+}
+
+
+.top4{
+    text-align: center;
+    margin-top: 160px;
+
+}
+.top4 p{
+    color:rgb(134, 36, 255);
+}
+.top4 h1{
+    color: gray;
+    font-weight: 400;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.card{
+    display: flex;
+    height: 400px;
+    /* border: 1px solid rgb(245, 235, 235); */
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+
+
+}
+.card div{
+    height: 308px;;
+    /* border: 1px solid rgb(234, 221, 221); */
+    width: 20%;
+    margin: 39px;
+    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.card div img{
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.card div h1{
+    color: rgb(97, 111, 123);
+    font-size: 18px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.card div p{
+    color: aliceblue;
+}
+.top5{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+}
+.top5 p{
+    color:plum ;
+}
+.top5 h3{
+    font-size: 30px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: gray;
+
+}
+.top6{
+    display: flex;
+    height: 200px;
+    /* border: 1px solid rgb(199, 197, 197); */
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+    gap: 50px;
+    border-radius: 30px;
+     padding: 5px;
+
+}
+.top6 div{
+    height: -1px;
+    width: 94%;
+    /* border: 1px solid rgb(127, 124, 124); */
+    box-shadow: rgba(176, 176, 221, 0.25) 0px 13px 27px -5px, rgba(241, 229, 229, 0.3) 0px 8px 16px -8px;
+   border-radius: 20px;
+   
+}
+.top6 div p{
+    color: #ffffff;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 23px;
+}
+.top6a{
+    display: flex;
+    
+}
+.top6a img{
+    width: 14%;
+    border-radius: 50%;
+    margin-left: 14px;
+}
+.top6a div{
+    margin-left: 13px;
+}
+.top6a div p{
+    font-size: 13px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+/* @media (max-width: 625px) {
+    .top1{
+        flex-direction: column;
+    }
+}
+@media (max-width: 625px) {
+    .top3 {
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .top1 h1 {
+        flex-direction: column;
+    }
+}
+@media (max-width: 300px) {
+    .top6 div{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .top6a img{
+        flex-direction: column;
+    }
+} */
+@media screen and (max-width: 768px) {
+    .cont {
+        margin-top: -101px;
+        /* Update or add styles for smaller screens */
+        height: auto;
+    }
+    .top {
+        /* Update or add styles for smaller screens */
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    /* Update or add more styles for other elements as needed */
+    .top1 h1 {
+        font-size: 30px;
+    }
+    .top2 p {
+        font-size: 16px;
+    }
+    .pic img {
+        width: 100%;
+        height: auto;
+    }
+    /* Adjust other styles for smaller screens */
+}

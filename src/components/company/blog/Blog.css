@@ -1,0 +1,171 @@
+.blog{
+    background-color:rgb(9, 9, 15);
+    height: auto;
+}
+.bt{
+    text-align: center;
+    color: white;
+}
+.bt h4{
+    color: palevioletred;
+}
+.bt h1{
+    font-size: 40px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.bt1{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    height: auto;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.bt1 div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+    height: auto;
+    width: 43%;
+
+}
+.bt1 div img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+}
+.bt2{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    height: 100px;
+    width: 89%;
+    margin: auto;
+    color: white;
+    margin-top: 30px;
+    
+}
+.bt2 div{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 150%;
+}
+.bt3{
+    display: flex;
+}
+
+.bt2 div img{
+    /* width: 10%; */
+    border-radius: 50%;
+    margin-left: 42px;
+}
+.bt4{
+    margin-left: 10px;
+}
+.bt5{
+    margin-top: 120px;
+    color: white;
+    text-align: center;
+}
+.bt6{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    height: auto;
+    width: 90%;
+    margin: auto;
+    color: white;
+    margin-top: 30px; 
+}
+.bt6 div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+    height: auto;
+    width: 29%;
+}
+.bt6 div img{
+    width: 100%;
+}
+/* Existing styles */
+
+/* ... */
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .blog {
+        /* Update or add styles for smaller screens */
+        background-color: rgb(9, 9, 15);
+        height: auto;
+    }
+    .bt {
+        /* Update or add styles for smaller screens */
+        text-align: center;
+        color: white;
+    }
+    .bt h1 {
+        font-size: 30px;
+    }
+    .bt1 {
+        /* Update or add styles for smaller screens */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .bt1 div {
+        /* Update or add styles for smaller screens */
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .bt1 div img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .bt2 {
+        /* Update or add styles for smaller screens */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .bt2 div {
+        /* Update or add styles for smaller screens */
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .bt2 div img {
+        width: 30%;
+        border-radius: 50%;
+        margin: 0;
+    }
+    .bt5 {
+        /* Update or add styles for smaller screens */
+        margin-top: 80px;
+    }
+    .bt6 {
+        /* Update or add styles for smaller screens */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .bt6 div {
+        /* Update or add styles for smaller screens */
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .bt6 div img {
+        width: 100%;
+    }
+    /* Adjust other styles for smaller screens */
+}

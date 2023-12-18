@@ -28,7 +28,7 @@ const Footer = () => {
       {/* Four-Column Footer */}
       <div className="footer-container">
         <div className="footer-column flex justify-start items-start">
-          <img src={workoIcon} alt="" className="h-8 aspect-square me-3 rounded-full"/>
+          <img src={workoIcon} alt="" className="h-8 aspect-square me-3 rounded-full" />
           <p className="wheading">
             Worko
           </p>
@@ -36,27 +36,43 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
-            <li>Integration</li>
-            <li>Pricing</li>
-            <li>Docs</li>
-            <li>Changelog</li>
+            <li>
+              <Link to="/integration" className="hover:text-gray-100">
+                Integration
+              </Link>
+            </li>
+            <li>
+              <Link to="/pricing" className="hover:text-gray-100">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-gray-100">
+                Docs
+              </Link>
+            </li>
+            <li>
+              <Link to="/changelog" className="hover:text-gray-100">
+                Changelog
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer-column">
           <h3>Company</h3>
           <ul>
-            <li className="hover:text-gray-100">
-              <Link to="#">
+            <li>
+              <Link to="/about" className="hover:text-gray-100">
                 About Us
               </Link>
             </li>
-            <li className="hover:text-gray-100">
-              <Link to="#">
+            <li>
+              <Link to="/contact" className="hover:text-gray-100">
                 Contact
               </Link>
             </li>
-            <li className="hover:text-gray-100">
-              <Link to="#">
+            <li>
+              <Link to="/blog" className="hover:text-gray-100">
                 Blog
               </Link>
             </li>
@@ -65,23 +81,23 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Resources</h3>
           <ul>
-            <li className="hover:text-gray-100">
-              <Link to="/legal/dpa">
+            <li>
+              <Link to="/legal/dpa" className="hover:text-gray-100">
                 DPA
               </Link>
             </li>
-            <li className="hover:text-gray-100">
-              <Link to="/legal/privacy-policies">
+            <li>
+              <Link to="/legal/privacy-policies" className="hover:text-gray-100">
                 Privacy Policy
               </Link>
             </li>
-            <li className="hover:text-gray-100">
-              <Link to="/legal/terms-of-services">
+            <li>
+              <Link to="/legal/terms-of-services" className="hover:text-gray-100">
                 Terms of Service
               </Link>
             </li>
-            <li className="hover:text-gray-100">
-              <Link to="/legal/report-vulnerability">
+            <li>
+              <Link to="/legal/report-vulnerability" className="hover:text-gray-100">
                 Report a Vulnerability
               </Link>
             </li>

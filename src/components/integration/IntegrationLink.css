@@ -1,206 +1,253 @@
-.hero {
-  position: absolute;
-  background-image: radial-gradient(
-    400px 220px at 65% -15%,
-    #6f06f0 -182%,
-    #03000000 105%
-  );
-  /* background-image: (red 0%, orange 25%, yellow 50%, green 75%, blue 100%); */
-  width: 100%;
-  height: min-content;
-  top: 0;
-  margin: 0 0;
-  padding: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-.container {
-  opacity: 1;
-  transform: perspective(1200px);
-}
-
-.left-side {
-  flex: 1 0 0px;
-  flex-flow: column;
-  place-content: flex-start;
-  position: sticky;
-}
-
-/* .left-side{
-    place-content: flex-start;
-    align-items: flex-start;
+.hero1 {
+    position: absolute;
+    background-image: radial-gradient(350px 150px at 65% -15%, #6f06f0 -250%, #03000000 105%);
+    /* background-image: (red 0%, orange 25%, yellow 50%, green 75%, blue 100%); */
+    width: 100%;
+    height: min-content;
+    top: 0;
+    margin: 0 0;
+    padding: 0;
+    left: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+.container{
+    opacity: 1;
+    transform: perspective(1200px);
+}
+
+.left-side{
     flex: 1 0 0px;
     flex-flow: column;
-    gap: 20px;
+    place-content: flex-start;
+    position: sticky;
+}
+
+
+.left-side-info{
+    place-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 8px;
     height: min-content;
-    max-width: 240px;
     overflow: hidden;
     padding: 0px;
-    position: sticky;
-    top: 100px;
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#box-green{
+    font-size: 0.8rem;
+    place-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background-color: rgba(26, 255, 129, 0.096);
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 8px;
+    height: min-content;
+    overflow: hidden;
+    padding: 4px 12px;
+    position: relative;
+    width: min-content;
+    color: rgba(9, 255, 83, 0.759);
+}
+
+#box-blue{
+    font-size: 0.8rem;
+    place-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background-color: rgba(130, 72, 255, 0.096);
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 8px;
+    height: min-content;
+    overflow: hidden;
+    padding: 4px 12px;
+    position: relative;
+    width: min-content;
+    color: rgba(107, 216, 255, 0.759);
+}
+
+#box-yellow{
+    font-size: 0.8rem;
+    place-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background-color: rgba(135, 95, 2, 0.096);
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 8px;
+    height: min-content;
+    overflow: hidden;
+    padding: 4px 12px;
+    position: relative;
+    width: min-content;
+    color: rgba(226, 132, 0, 0.997);
+}
+
+.divider{
+    width: 100%;
+    height: 0.1rem;
+    background-color: rgba(255, 255, 255, .06);
+}
+
+
+.header{
+    margin-left: 100px;
+}
+
+.outer-div{
+    width: 4rem;
+    height: 4rem;
+    background: #121218;
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 15px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem 0.9rem;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.outer-div-hide{
+    width: 4rem;
+    height: 4rem;
+    background: #121218;
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 15px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem 0.9rem;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+.right-side{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 48px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
     transform: perspective(1200px);
     width: 1px;
-    will-change: transform;
-    z-index: 1;
-} */
-
-.left-side-info {
-  place-content: center;
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: column;
-  gap: 8px;
-  height: min-content;
-  overflow: hidden;
-  padding: 0px;
-  position: relative;
-  width: 100%;
-  font-size: 1rem;
 }
 
-.categories {
-  font-size: 0.8rem;
-  place-content: flex-start;
-  align-items: center;
-  backdrop-filter: blur(12px);
-  background-color: rgba(130, 72, 255, 0.096);
-  border-radius: 6px;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset;
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: row;
-  gap: 8px;
-  height: min-content;
-  overflow: hidden;
-  padding: 4px 12px;
-  position: relative;
-  width: 100%;
-  color: rgba(107, 216, 255, 0.759);
+.right-side img{
+    width: 98%;
+    height: 80%;
+    border-radius: 20px;
 }
 
-.divider {
-  width: 100%;
-  height: 0.1rem;
-  background-color: rgba(255, 255, 255, 0.06);
+.content{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    width: 90%;
+    margin-top: -40px;
 }
 
-.image-container img {
-  filter: grayscale(100%);
-}
-/* img {
-  width: 25px;
-  height: 25px;
-} */
-
-.header {
-  margin-left: 100px;
-}
-
-.outer-div {
-  width: 4rem;
-  height: 4rem;
-  background: #121218;
-  border: 1px solid rgb(45, 45, 45);
-  border-radius: 15px;
-  aspect-ratio: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem 2rem;
-  transition: 0.5s ease;
-  cursor: pointer;
+.columns{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
 }
 
-.right-side {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 48px;
-  height: min-content;
-  justify-content: flex-start;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  transform: perspective(1200px);
-  width: 1px;
+.heading{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
 }
 
-.right-side img {
-  width: 98%;
-  height: 80%;
-  border-radius: 20px;
+.information{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    place-content: flex-start;
 }
 
-.content {
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  transform: none;
-  width: 90%;
-  margin-top: -40px;
+.logo{
+    width: 2rem;
+    height: 2rem;
 }
 
-.columns {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 8px;
-  height: min-content;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  width: 100%;
+.bottom-logo{
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
-.heading {
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  transform: none;
+
+
+@media(width<640px){
+    .header{
+        margin-left: 13%;
+    }
+    .outer-div{
+        width: 3em;
+        height: 3rem;
+        padding: 0.1rem 0.1rem;
+    }
+    .tables{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
-.information {
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  transform: none;
-  place-content: flex-start;
+
+@media(width<300px){
+    .header{
+        position: absolute;
+        margin-left: 1px;
+    }
 }
 
-@media (width<640px) {
-  .header {
-    margin-left: 13%;
-  }
-  .image-container img {
-    width: 20px;
-    height: 20px;
-  }
-  .outer-div {
-    width: 5px;
-    height: 5px;
-  }
-}
-
-@media (width<300px) {
-  .header {
-    position: absolute;
-    margin-left: 1px;
-  }
+@media(min-width:300px){
+    .tables{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }

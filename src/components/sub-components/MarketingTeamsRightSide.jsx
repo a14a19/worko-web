@@ -179,7 +179,7 @@ function MarketingTeamsRightSide({ tab }) {
                     </div>
                 </div>
                 <div className="flex justify-start items-start gap-2 flex-nowrap p-4">
-                    <div className="w-full w-[226px] h-[144px] bg-[#121218] p-2 border border-gray-900 rounded-md flex flex-col">
+                    <div className="w-[226px] h-[144px] bg-[#121218] p-2 border border-gray-900 rounded-md flex flex-col">
                         <div className="text-[0.75rem] text-start">Objective by condition</div>
                         <div className="max-w-[90px] max-h-[90px] mx-auto mt-3">
                             <DoughnutChart />
