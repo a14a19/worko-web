@@ -8,30 +8,36 @@ import workoIcon from "../../assets/worko.webp";
 
 const Footer = () => {
   return (
-    <div className="mt-16 max-w-[1140px] mb-20 mx-auto">
+    <div className="mt-16 max-w-[1140px] mb-4 mx-auto ">
       {/* Newsletter Box */}
-      <div className="newsletter-box">
-        <div className="subscribe-heading">Subscribe to Newsletter</div>
-        <div className="exclusive-content">
-          Get exclusive content and become a part of the Worko community.
+      <div className="newsletter-box flex justify-between item-center flex-col md:flex-row">
+        <div className="subscribe-heading bg-gradient-to-b from-gray-600 to-white text-transparent bg-clip-text">
+          Join our Newsletter
+          <div className="exclusive-content">
+            Get exclusive content and become a part of the Worko community.
+          </div>
         </div>
-        <div className="email-input-container">
+
+        <div className="email-input-container ">
           <input
             type="email"
             placeholder="Enter Email address"
             className="email-input"
+            style={{ color: "white" }}
           />
           <button className="subscribe-button">Subscribe</button>
         </div>
       </div>
 
       {/* Four-Column Footer */}
-      <div className="footer-container">
+      <div className="footer-container block justify sm:flex lg:flex bg-transparent">
         <div className="footer-column flex justify-start items-start">
-          <img src={workoIcon} alt="" className="h-8 aspect-square me-3 rounded-full" />
-          <p className="wheading">
-            Worko
-          </p>
+          <img
+            src={workoIcon}
+            alt=""
+            className="h-8 aspect-square me-3 rounded-full"
+          />
+          <p className="wheading">Worko</p>
         </div>
         <div className="footer-column">
           <h3>Product</h3>
@@ -61,43 +67,34 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Company</h3>
           <ul>
-            <li>
-              <Link to="/about" className="hover:text-gray-100">
-                About Us
-              </Link>
+            <li className="hover:text-gray-100">
+              <Link to="#">About Us</Link>
             </li>
-            <li>
-              <Link to="/contact" className="hover:text-gray-100">
-                Contact
-              </Link>
+            <li className="hover:text-gray-100">
+              <Link to="#">Contact</Link>
             </li>
-            <li>
-              <Link to="/blog" className="hover:text-gray-100">
-                Blog
-              </Link>
+            <li className="hover:text-gray-100">
+              <Link to="#">Blog</Link>
             </li>
           </ul>
         </div>
         <div className="footer-column">
           <h3>Resources</h3>
           <ul>
-            <li>
-              <Link to="/legal/dpa" className="hover:text-gray-100">
-                DPA
-              </Link>
+            <li className="hover:text-gray-100">
+              <Link to="/legal/dpa">DPA</Link>
+            </li>
+            <li className="hover:text-gray-100">
+              <Link to="/legal/privacy-policies">Privacy Policy</Link>
+            </li>
+            <li className="hover:text-gray-100">
+              <Link to="/legal/terms-of-services">Terms of Service</Link>
             </li>
             <li>
-              <Link to="/legal/privacy-policies" className="hover:text-gray-100">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link to="/legal/terms-of-services" className="hover:text-gray-100">
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link to="/legal/report-vulnerability" className="hover:text-gray-100">
+              <Link
+                to="/legal/report-vulnerability"
+                className="hover:text-gray-100"
+              >
                 Report a Vulnerability
               </Link>
             </li>
