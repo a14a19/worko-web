@@ -27,14 +27,14 @@ function Header() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-        gsap.from(animaton.current, {
-            opacity: 0,
-            duration: 0.5,
-        })
+      gsap.from(animaton.current, {
+        opacity: 0,
+        duration: 0.5,
+      })
     })
 
     return () => ctx.revert();
-}, [])
+  }, [])
 
   return (
     <header className="bg-[#87878713] backdrop-blur max-w-[1140px] fixed top-5 right-0 left-0 rounded-full z-20 lg-header:mx-auto mt-2 shadow-[inset_0px_1px_0px_0px_rgba(225,225,225,0.1)] mx-5" ref={animaton}>
@@ -159,9 +159,9 @@ function Header() {
         <div className="hidden md:flex md:flex-1 md:justify-end">
           <Link
             to="/"
-            className="text-sm font-semibold leading-6 hover:text-white"
+            className="text-sm font-semibold leading-6 hover:text-white me-2"
           >
-            Log in <span aria-hidden="true">&rarr;</span>
+            Login
           </Link>
         </div>
       </nav>
@@ -183,28 +183,28 @@ function Header() {
                 to="/integration"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
-                >
+              >
                 Integrations
               </Link>
               <Link
                 to="/pricing"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
-                >
+              >
                 Pricing
               </Link>
               <Link
                 to="/docs"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
-                >
+              >
                 Docs
               </Link>
               <Link
                 to="/changelog"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
-                >
+              >
                 Changelog
               </Link>
             </div>

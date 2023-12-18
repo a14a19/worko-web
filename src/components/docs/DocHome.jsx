@@ -6,7 +6,7 @@ import { RiBox3Fill } from "react-icons/ri";
 
 function DocHome() {
     return (
-        <div style={{ color: "white", marginLeft: "150px" }}>
+        <div style={{ padding: "revert", margin: "revert", fontSize: "revert", listStyle: "revert" }}>
             <h5>Documentation</h5>
 
             <h1>Welcome to Worko Docs</h1>
@@ -42,7 +42,7 @@ function DocHome() {
 
             <h1>Task Management</h1>
 
-            <ul>
+            <ul style={{ listStyle: "revert", padding: "revert", margin: "revert" }}>
                 <li>Create tasks with due dates and descriptions.</li>
                 <li>Organize tasks into projects.</li>
                 <li>Prioritize tasks based on urgency and importance.</li>

@@ -25,8 +25,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="*" element={<Main />} />
-        <Route path="/docs" element={<Docs />} />
+        <Route path="/*" element={<Main />} />
+        <Route path="/docs/*" element={<Docs />} />
       </Routes>
     </>
   );
