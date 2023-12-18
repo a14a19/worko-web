@@ -4,7 +4,7 @@ import { MdLibraryBooks } from "react-icons/md";
 import { FaRegPlayCircle } from "react-icons/fa";
 import { RiBox3Fill } from "react-icons/ri";
 
-function DocumentHome() {
+function DocHome() {
     return (
         <div style={{ color: "white", marginLeft: "150px" }}>
             <h5>Documentation</h5>
@@ -82,4 +82,4 @@ function DocumentHome() {
     )
 }
 
-export default DocumentHome
+export default DocHome
