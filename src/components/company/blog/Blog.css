@@ -8,6 +8,7 @@
 }
 .bt h4{
     color: palevioletred;
+    margin-top: 120px;
 }
 .bt h1{
     font-size: 40px;
@@ -23,10 +24,11 @@
     width: 90%;
     margin: auto;
     color: white;
+    margin-top: 23px;
 }
 .bt1 div{
-    /* border: 1px solid red; */
-    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+    border: 1px solid #ffffff0f;
+    /* box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px; */
     height: auto;
     width: 43%;
 
@@ -34,7 +36,7 @@
 .bt1 div img{
     width: 100%;
     border-radius: 20px;
-    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px; */
 }
 .bt2{
     display: flex;
@@ -80,13 +82,14 @@
     margin-top: 30px; 
 }
 .bt6 div{
-    /* border: 1px solid red; */
-    box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px;
+    border: 1px solid #ffffff0f;
+    /* box-shadow: rgba(166, 141, 141, 0.35) 0px 5px 15px; */
     height: auto;
     width: 29%;
 }
 .bt6 div img{
     width: 100%;
+    border-radius: 20px;
 }
 /* Existing styles */
 
