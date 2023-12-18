@@ -1,5 +1,6 @@
 import { ChartBarIcon, CodeBracketIcon, CheckCircleIcon, UserCircleIcon, RocketLaunchIcon, BuildingOffice2Icon } from "@heroicons/react/24/outline";
 import DoughnutChart from "../charts/DoughnutChart";
+import BarChart from "../charts/BarChart";
 
 function MarketingTeamsRightSide({ tab }) {
     if (tab === "marketingTeams") {
@@ -183,6 +184,12 @@ function MarketingTeamsRightSide({ tab }) {
                         <div className="text-[0.75rem] text-start">Objective by condition</div>
                         <div className="max-w-[90px] max-h-[90px] mx-auto mt-3">
                             <DoughnutChart />
+                        </div>
+                    </div>
+                    <div className="w-[280px] h-[144px] bg-[#121218] p-2 border border-gray-900 rounded-md flex flex-col">
+                        <div className="text-[0.75rem] text-start">Team tasks by priority</div>
+                        <div className="mx-auto mt-3 w-full h-full">
+                            <BarChart />
                         </div>
                     </div>
                 </div>

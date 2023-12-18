@@ -8,7 +8,7 @@ import workoIcon from "../../assets/worko.webp";
 
 const Footer = () => {
   return (
-    <div className="mt-16 max-w-[1140px] mb-4 mx-auto ">
+    <div className="mt-[10rem] max-w-[1140px] mb-4 mx-auto ">
       {/* Newsletter Box */}
       <div className="newsletter-box flex justify-between item-center flex-col md:flex-row">
         <div className="subscribe-heading bg-gradient-to-b from-gray-600 to-white text-transparent bg-clip-text">
@@ -68,13 +68,13 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             <li className="hover:text-gray-100">
-              <Link to="#">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li className="hover:text-gray-100">
-              <Link to="#">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li className="hover:text-gray-100">
-              <Link to="#">Blog</Link>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </div>

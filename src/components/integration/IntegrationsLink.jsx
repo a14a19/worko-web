@@ -112,7 +112,7 @@ export default function IntegrationsLink() {
             <div className="image-holder flex justify-start items-center w-full ms-5 sm:mt-5">
               <img className="w-full" src={dataInt[0].img} alt="" />
             </div>
-            <div className="content text-gray-500 text-left mr-9">
+            <div className="content-int text-gray-500 text-left mr-9">
               {dataInt[0].img_data}
             </div>
             <div className="columns ms-5 gap-10">
