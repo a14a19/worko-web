@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
+import Docs from "./pages/Docs";
 
 function App() {
 
@@ -22,11 +23,12 @@ function App() {
 
 
   return (
-    <main className="px-5">
+    <>
       <Routes>
         <Route path="*" element={<Main />} />
+        <Route path="/docs" element={<Docs />} />
       </Routes>
-    </main>
+    </>
   );
 }
 

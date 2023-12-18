@@ -1,9 +1,17 @@
 .title {
   color: white;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: revert;
+  font-size: revert;
+  list-style: revert;
+  padding: revert;
 }
 
 .para {
   color: gray;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: revert;
+  font-size: revert;
+  padding: revert;
+  list-style: revert;
 }

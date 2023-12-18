@@ -144,7 +144,7 @@ function Header() {
             Pricing
           </Link>
           <Link
-            to="/"
+            to="/docs"
             className="text-sm font-semibold leading-6 hover:text-white"
           >
             Docs
@@ -194,7 +194,7 @@ function Header() {
                 Pricing
               </Link>
               <Link
-                to="/"
+                to="/docs"
                 className="-mx-3 block rounded-lg mx-6 py-2 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
                 >

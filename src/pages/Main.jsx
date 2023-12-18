@@ -16,7 +16,7 @@ import Contact from "../components/company/contact/Contact";
 
 function Main() {
     return (
-        <>
+        <main className="px-5">
             <Header />
             <Routes>
                 <Route exact path="/" element={<Home />} />
@@ -33,7 +33,7 @@ function Main() {
                 <Route exact path="legal/report-vulnerability" element={<ReportVulnerability />} />
             </Routes>
             <Footer />
-        </>
+        </main>
     )
 }
 
