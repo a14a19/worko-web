@@ -18,21 +18,30 @@ function SideBarDocs() {
             <div>
                 <input type="text" className='rounded-lg border border-gray-800 py-2 px-3 my-6' placeholder='Search...' />
             </div>
-            <div className="mx-auto w-full max-w-md rounded-2xl p-2 flex flex-col gap-4">
+            <div className="mx-auto w-full max-w-md rounded-2xl p-2 flex flex-col gap-4 overflow-y-scroll">
                 <div className='text-base text-gray-200 flex flex-col gap-4 my-2'>
                     Getting Started
                     <Link className='text-gray-400'>Worko Account</Link>
                     <Link className='text-gray-400'>Worko Dashboard</Link>
                     <Link className='text-gray-400'>Managing tasks</Link>
                 </div>
-                <div className='text-sm text-gray-200'>
+                <div className='text-base text-gray-200 flex flex-col gap-4 my-2'>
                     Getting Started
+                    <Link className='text-gray-400'>Worko Account</Link>
+                    <Link className='text-gray-400'>Worko Dashboard</Link>
+                    <Link className='text-gray-400'>Managing tasks</Link>
                 </div>
-                <div className='text-sm text-gray-200'>
+                <div className='text-base text-gray-200 flex flex-col gap-4 my-2'>
                     Getting Started
+                    <Link className='text-gray-400'>Worko Account</Link>
+                    <Link className='text-gray-400'>Worko Dashboard</Link>
+                    <Link className='text-gray-400'>Managing tasks</Link>
                 </div>
-                <div className='text-sm text-gray-200'>
+                <div className='text-base text-gray-200 flex flex-col gap-4 my-2'>
                     Getting Started
+                    <Link className='text-gray-400'>Worko Account</Link>
+                    <Link className='text-gray-400'>Worko Dashboard</Link>
+                    <Link className='text-gray-400'>Managing tasks</Link>
                 </div>
             </div>
         </div>

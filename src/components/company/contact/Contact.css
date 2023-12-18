@@ -11,24 +11,24 @@
     justify-content: space-evenly;
     color: white;
     margin-left:100px ;
-    @media (max-width: 400px) {
-        .ct2{
-            flex-direction: column;
-        }
-    }
     
+}
+@media (max-width: 400px) {
+    .ct2{
+        flex-direction: column;
+    }
 }
 .ct2 h1{
     font-size: 33px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    @media (max-width: 400px) {
-        .ct2 h1{
-            flex-direction: column;
-        }
-    }
     
+}
+@media (max-width: 400px) {
+    .ct2 h1{
+        flex-direction: column;
+    }
 }
 .ct3{
     margin-top: 60px;
@@ -41,10 +41,10 @@
     justify-content: space-around;
     margin: auto;
     margin-top: 50px;
-    @media (max-width: 400px) {
-        .ct4{
-        flex-direction: column;
-    }
+}
+@media (max-width: 400px) {
+    .ct4{
+    flex-direction: column;
 }
 
 }
@@ -73,13 +73,13 @@
   
   .message-box p {
     color: #666;
-    @media (max-width: 400px) {
-        .message-box p{
-            flex-direction: column;
-        }
-    }
     
-  }
+}
+@media (max-width: 400px) {
+    .message-box p{
+        flex-direction: column;
+    }
+}
   
   .message-box hr {
     border: 0;
