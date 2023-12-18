@@ -50,15 +50,16 @@
     border-radius: 10px; 
     padding: 20px; 
     text-align: left;
+    justify-content: space-between;
+
     max-width: auto;
     margin: 20px 0; 
   }
   
-  .subscribe-heading {
+  /* .subscribe-heading {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
-    /* Add the following styles to replicate the provided style */
     background-image: linear-gradient(0deg, rgb(97, 100, 107) 0%, rgb(255, 255, 255) 100%);
     -webkit-background-clip: text;
     color: transparent;
@@ -66,7 +67,8 @@
   
   .exclusive-content {
     color: gray;
-    font-size: 1.2em;
+    font-size: 1.2em;    
+    justify-content: flex-start;
     margin-bottom: 20px;
   }
   
@@ -90,7 +92,54 @@
     border-radius: 5px; 
     cursor: pointer;
     margin-left: -10px; 
-  }
+  } */
+
+  /* Add these styles to adjust the font sizes for subscribe-heading and exclusive-content */
+.subscribe-heading {
+  font-size:2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-image: linear-gradient(0deg, rgb(97, 100, 107) 0%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.exclusive-content {
+  font-size: 0.5em; /* Decrease the font size for the content */
+  color: gray;
+  font-weight: lighter;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/* Add these styles to make email-input and subscribe-button appear on the same line */
+.email-input-container {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+}
+
+.email-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  margin-right: 20px; 
+
+
+}
+
+.subscribe-button {
+  background-color: #7808FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -15px;
+
+}
+
 
 
 
