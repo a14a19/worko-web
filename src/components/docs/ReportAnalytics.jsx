@@ -3,17 +3,17 @@ import React from 'react'
 function ReportAnalytics() {
     return (
         <div  style={{ padding: "revert", margin: "revert", fontSize: "revert",  }}>
-            <p>Advanced features</p>
-            <h1>Reporting and Analytics</h1>
-            <p> Reports and analytics help you gain insights into your task management and track progress. In this section, we'll explore how to generate reports on task completion in Worko.</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Advanced features</p>
+            <h1 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Reporting and Analytics</h1>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}> Reports and analytics help you gain insights into your task management and track progress. In this section, we'll explore how to generate reports on task completion in Worko.</p>
 
             <br />
 
             <hr></hr>
 
 
-            <h3>Generating a Task Completion Report</h3>
-            <p>To generate a report on task completion in Worko, follow these steps: <br />
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Generating a Task Completion Report</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>To generate a report on task completion in Worko, follow these steps: <br />
                 Step 1: Log in to your Worko Management account. <br />
 
                 Step 2: Navigate to the "Reports" or "Analytics" section in your Worko dashboard. <br />
@@ -26,9 +26,9 @@ function ReportAnalytics() {
 
                 Step 6: View and download the generated report, which may include statistics on completed tasks, task duration, and more. <br />
 
-                <h3>Using the Code Block</h3>
+                <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Using the Code Block</h3>
 
-                <p>To programmatically generate a task completion report using the Worko API, you can use the following code example: <br />
+                <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>To programmatically generate a task completion report using the Worko API, you can use the following code example: <br />
 
 
 

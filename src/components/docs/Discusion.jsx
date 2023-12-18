@@ -3,19 +3,19 @@ import React from 'react'
 function Discusion() {
     return (
         <div  style={{ padding: "revert", margin: "revert", fontSize: "revert",  }}>
-            <p>Collaboration</p>
-            <h1>Discussions</h1>
-            <p> Discussions are an essential part of teamwork and collaboration within Worko. In this section, we'll explore <br /> how to create and participate in discussions to facilitate communication and information sharing. </p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Collaboration</p>
+            <h1 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Discussions</h1>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}> Discussions are an essential part of teamwork and collaboration within Worko. In this section, we'll explore <br /> how to create and participate in discussions to facilitate communication and information sharing. </p>
 
             <br />
 
             <hr></hr>
 
 
-            <h3>Creating a New Discussion</h3>
-            <p> To start a new discussion or topic in Worko, follow these steps:</p>
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Creating a New Discussion</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}> To start a new discussion or topic in Worko, follow these steps:</p>
 
-            <p>Step 1: Log in to your Worko Management account. <br />
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Step 1: Log in to your Worko Management account. <br />
 
                 Step 2: Navigate to the "Discussions" or "Forum" section in your Worko dashboard. <br />
 
@@ -31,10 +31,10 @@ function Discusion() {
 
             </p>
 
-            <h3>Using the Code Block</h3>
-            <p>To programmatically create a new discussion or topic using the Worko API, you can use the following code example:</p>
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Using the Code Block</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>To programmatically create a new discussion or topic using the Worko API, you can use the following code example:</p>
 
-            <p>By following these steps or using the provided code block, you can easily create and engage in discussions to foster collaboration and information sharing within your Worko platform.</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>By following these steps or using the provided code block, you can easily create and engage in discussions to foster collaboration and information sharing within your Worko platform.</p>
 
             <br />
 

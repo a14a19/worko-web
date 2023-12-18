@@ -3,17 +3,17 @@ import React from 'react'
 function CustomizingWorko() {
     return (
         <div  style={{ padding: "revert", margin: "revert", fontSize: "revert",  }}>
-            <p>Advanced features</p>
-            <h1>Customizing Worko</h1>
-            <p> Customizing Worko allows you to tailor the platform to your preferences and needs. In this section, we'll explore how you can personalize the appearance and settings in Worko.</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Advanced features</p>
+            <h1 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Customizing Worko</h1>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}> Customizing Worko allows you to tailor the platform to your preferences and needs. In this section, we'll explore how you can personalize the appearance and settings in Worko.</p>
 
             <br />
 
             <hr></hr>
 
 
-            <h3>Changing the Theme</h3>
-            <p>To change the appearance of Worko, follow these steps: <br />
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Changing the Theme</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>To change the appearance of Worko, follow these steps: <br />
                 Step 1: Log in to your Worko Management account.
 
                 Step 2: Navigate to the "Settings" or "Appearance" section in your Worko dashboard. <br />
@@ -24,9 +24,9 @@ function CustomizingWorko() {
 
                 Step 5: Save your theme preferences. <br />
 
-                <h3>Using the Code Block</h3>
+                <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Using the Code Block</h3>
 
-                <p>To programmatically change the theme or appearance settings using the Worko API, you can use the following code <br /> example:</p>
+                <p >To programmatically change the theme or appearance settings using the Worko API, you can use the following code <br /> example:</p>
 
                 <br />
 

@@ -3,18 +3,18 @@ import React from 'react'
 function TaskAuto() {
     return (
         <div  style={{ padding: "revert", margin: "revert", fontSize: "revert",  }}>
-            <p>Advanced features</p>
-            <h1>Task Automation</h1>
-            <p>Task automation can help you save time and increase productivity by streamlining routine tasks. In this section, we'll explore how to set up <br /> task automation in Worko.</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Advanced features</p>
+            <h1 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Task Automation</h1>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Task automation can help you save time and increase productivity by streamlining routine tasks. In this section, we'll explore how to set up <br /> task automation in Worko.</p>
             <br />
 
             <hr></hr>
 
             <br />
 
-            <h2>Automating a Task</h2>
+            <h2 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Automating a Task</h2>
 
-            <p>To automate a specific task in Worko, you can create task automation rules. These rules enable you to define conditions under which a task should be automatically triggered. Follow these steps: <br />
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>To automate a specific task in Worko, you can create task automation rules. These rules enable you to define conditions under which a task should be automatically triggered. Follow these steps: <br />
 
 
 
@@ -30,11 +30,11 @@ function TaskAuto() {
 
                 Step 6: Save the automation rule. </p>
 
-            <h3>Using the Code Block</h3>
-            <p>
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Using the Code Block</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>
                 To programmatically set up task automation using the Worko API, you can use the following code example:</p>
 
-            <p>This code sends a request to the Taskify API to create a task automation rule that triggers the creation of a meeting reminder task when the meeting date matches the current day. <br />
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>This code sends a request to the Taskify API to create a task automation rule that triggers the creation of a meeting reminder task when the meeting date matches the current day. <br />
 
                 <br />
 
