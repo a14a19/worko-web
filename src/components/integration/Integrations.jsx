@@ -234,7 +234,7 @@ export default function Integrations() {
                   </div>
                 </div>
               </Link>
-              <Link to="integrations/discord">
+              <Link to="/integrations/discord">
                 <div className="outer-div-hide" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}>
                   <div className="feature-icon flex justify-start items-center">
                     <div className="image-holder flex justify-center items-center">
@@ -256,7 +256,7 @@ export default function Integrations() {
                   </div>
                 </div>
               </Link>
-              <Link to="integrations/outlook">
+              <Link to="/integrations/outlook">
                 <div className="outer-div-hide" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}>
                   <div className="feature-icon flex justify-start items-center">
                     <div className="image-holder flex justify-center items-center">
