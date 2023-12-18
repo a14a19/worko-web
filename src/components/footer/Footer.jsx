@@ -31,14 +31,16 @@ const Footer = () => {
 
       {/* Four-Column Footer */}
       <div className="footer-container block justify sm:flex lg:flex bg-transparent">
-        <div className="footer-column flex justify-start items-start">
-          <img
-            src={workoIcon}
-            alt=""
-            className="h-8 aspect-square me-3 rounded-full"
-          />
-          <p className="wheading">Worko</p>
-        </div>
+        <Link to="/">
+          <div className="footer-column flex justify-start items-start">
+            <img
+              src={workoIcon}
+              alt=""
+              className="h-8 aspect-square me-3 rounded-full"
+            />
+            <p className="wheading">Worko</p>
+          </div>
+        </Link>
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
@@ -53,7 +55,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-gray-100">
+              <Link to="/docs" className="hover:text-gray-100">
                 Docs
               </Link>
             </li>
