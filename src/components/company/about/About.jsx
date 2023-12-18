@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import { FaTwitterSquare } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -56,9 +55,11 @@ const About = () => {
             <p>Founder</p>
             <hr />
             {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
+            </span>
             {/* </div> */}
           </div>
           <div>
@@ -69,11 +70,11 @@ const About = () => {
             <h1>Divya Gowda</h1>
             <p>Founder</p>
             <hr />
-            {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
           <div>
             <img
@@ -84,10 +85,11 @@ const About = () => {
             <p>Software Developer</p>
             <hr />
             {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
           <div>
             <img
@@ -98,10 +100,11 @@ const About = () => {
             <p>Software Developer</p>
             <hr />
             {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
         </div>
         <div className="card">
@@ -113,11 +116,11 @@ const About = () => {
             <h1>Anas Ahmed</h1>
             <p>Software Developer</p>
             <hr />
-            {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
           <div>
             <img
@@ -127,11 +130,11 @@ const About = () => {
            <h1>Ajay Singh</h1>
             <p>Software Developer</p>
             <hr />
-            {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
           <div>
             <img
@@ -141,11 +144,11 @@ const About = () => {
             <h1>Nawaz Sharief</h1>
             <p>Software Developer</p>
             <hr />
-            {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
           <div>
             <img
@@ -155,11 +158,11 @@ const About = () => {
              <h1>Pisavadiya Chandni B</h1>
             <p>Software Developer</p>
             <hr />
-            {/* <div style={{display:"flex", color:"white", fontSize:"30px"}}> */}
+            <span className="ic">
             <FaTwitterSquare />
             <CiLinkedin />
             <CiFacebook />
-            {/* </div> */}
+            </span>
           </div>
         </div>
 

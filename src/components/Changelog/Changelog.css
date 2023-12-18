@@ -43,13 +43,13 @@ body {
 
 .image {
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
   max-width: 1100px;
   height: auto;
   border-radius: 10px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .update-main {
@@ -140,7 +140,7 @@ h2 {
   color: gray;
 }
 
-.image {
+/* .image {
   margin-top: 20px;
   width: 80%;
   max-width: 1100px;
@@ -149,7 +149,7 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .update-main {
   color: white;

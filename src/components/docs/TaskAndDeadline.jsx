@@ -3,18 +3,18 @@ import React from 'react'
 function TaskAndDeadline() {
     return (
         <div  style={{ padding: "revert", margin: "revert", fontSize: "revert",  }}>
-            <p>Collaboration</p>
-            <h1>Tasks and Deadlines</h1>
-            <p>Managing tasks and deadlines is a fundamental aspect of effective task management. In this section, we'll <br /> explore how you can create tasks with specific deadlines and keep track of your work in Worko</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Collaboration</p>
+            <h1 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Tasks and Deadlines</h1>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Managing tasks and deadlines is a fundamental aspect of effective task management. In this section, we'll <br /> explore how you can create tasks with specific deadlines and keep track of your work in Worko</p>
 
             <br />
 
             <hr></hr>
 
 
-            <h3>Creating a Task with a Deadline</h3>
-            <p>To create a task with a specific deadline in Worko, follow these steps</p>
-            <p>
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Creating a Task with a Deadline</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>To create a task with a specific deadline in Worko, follow these steps</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>
                 Step 1: Log in to your Worko Management account. <br />
 
                 Step 2: Navigate to the "Tasks" or "To-Do" section in your Worko dashboard. <br />
@@ -26,9 +26,9 @@ function TaskAndDeadline() {
                 Step 5: Set the task's due date, specifying when it needs to be completed. <br />
             </p>
 
-            <h3>Managing Deadlines</h3>
-            <p>After creating a task, you can easily manage and track its deadline by:</p>
-            <ul>
+            <h3 style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>Managing Deadlines</h3>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>After creating a task, you can easily manage and track its deadline by:</p>
+            <ul style={{ listStyle: "revert", padding: "revert", margin: "revert" }}>
                 <li>
                     Regularly reviewing your Worko dashboard to see upcoming tasks with their due dates.</li>
 
@@ -39,7 +39,7 @@ function TaskAndDeadline() {
             </ul>
             <br />
 
-            <p>By following these steps and utilizing the provided code block, you can effectively create tasks with specific deadlines and <br /> manage them within your Worko platform.</p>
+            <p style={{ padding: "revert", margin: "revert", fontSize: "revert",}}>By following these steps and utilizing the provided code block, you can effectively create tasks with specific deadlines and <br /> manage them within your Worko platform.</p>
 
             <br />
 
