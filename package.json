@@ -9,6 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  
   "dependencies": {
     "@gsap/react": "^2.0.2",
     "@headlessui/react": "^1.7.17",
