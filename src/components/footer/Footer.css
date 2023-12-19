@@ -1,62 +1,57 @@
-
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #0a0a0a;
-    padding: 20px;
-    max-width: 1140px;
-    margin-top: 16;
-    color: gray;
-  }
-  
-  .footer-column {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .footer-column h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    /* Apply the gradient styling for the heading */
-   color: white;
-  }
-  
-  .wheading{
-     font-size: 1.5em ; /* Adjust the font size as needed */
-     font-weight:bold;
-    color: white; /* Set the text color to white */
-      
-  }
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column li {
-    margin-bottom: 5px;
-  }
-  
-  /* Additional styling for larger columns */
-  .footer-column {
-    width: 200px; /* Adjust the width as needed */
-  }
-  
-  
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0a0a;
+  padding: 20px;
+  max-width: 1140px;
+  margin-top: 16;
+  color: gray;
+}
 
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Apply the gradient styling for the heading */
+  color: white;
+}
+
+.wheading {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: white; /* Set the text color to white */
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+/* Additional styling for larger columns */
+.footer-column {
+  width: 200px; /* Adjust the width as needed */
+}
 
 .newsletter-box {
-    background-color: #161616; 
-    border-radius: 10px; 
-    padding: 20px; 
-    text-align: left;
-    justify-content: space-between;
+  background-color: #161616;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  justify-content: space-between;
 
-    max-width: auto;
-    margin: 20px 0; 
-  }
-  
-  /* .subscribe-heading {
+  max-width: auto;
+  margin: 20px 0;
+}
+
+/* .subscribe-heading {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
@@ -94,12 +89,16 @@
     margin-left: -10px; 
   } */
 
-  /* Add these styles to adjust the font sizes for subscribe-heading and exclusive-content */
+/* Add these styles to adjust the font sizes for subscribe-heading and exclusive-content */
 .subscribe-heading {
-  font-size:2em;
+  font-size: 2em;
   font-weight: bold;
   margin-bottom: 10px;
-  background-image: linear-gradient(0deg, rgb(97, 100, 107) 0%, rgb(255, 255, 255) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgb(97, 100, 107) 0%,
+    rgb(255, 255, 255) 100%
+  );
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -124,83 +123,75 @@
   padding: 10px;
   border-radius: 5px;
   background-color: black;
-  margin-right: 20px; 
-
-
+  margin-right: 20px;
 }
 
 .subscribe-button {
-  background-color: #7808FF;
+  background-color: #7808ff;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-left: -15px;
-
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust as needed */
+  padding-top: 10px; /* Add padding to separate from the items above */
+}
 
+.footer-copyright {
+  font-size: 0.8em;
+}
 
+.footer-social-icons {
+  display: flex; /* Ensure the icons stay on the same line */
+}
 
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; /* Align items to the bottom */
-    margin-top: 20px; /* Adjust as needed */
-    padding-top: 10px; /* Add padding to separate from the items above */
-  }
-  
-  .footer-copyright {
-    font-size: 0.8em;
-  }
-  
-  .footer-social-icons {
-    display: flex; /* Ensure the icons stay on the same line */
-  }
-  
-  .social-icon-link {
-    margin-left: 10px; /* Adjust space between icons as needed */
-  }
-  
-  .mobile-menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: #333; /* Adjust color as needed */
-  }
-  
-  .menu-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #1f1f1f; /* Adjust background color as needed */
-    top: 60px; /* Adjust distance from the top as needed */
-    right: 0; /* Align to the right */
-    z-index: 1000;
-    padding: 10px; /* Adjust padding as needed */
-  }
-  
-  /* Additional styling for mobile menu items */
-  .mobile-menu div {
-    padding: 8px;
-    color: #fff; /* Adjust text color as needed */
-    border-bottom: 1px solid #333; /* Adjust border color as needed */
-  }
-  
-  
-  .footer {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  .footer {
-    bottom: 0;
-    width: 100%;
-  }
+.social-icon-link {
+  margin-left: 10px; /* Adjust space between icons as needed */
+}
+
+.mobile-menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #333; /* Adjust color as needed */
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f; /* Adjust background color as needed */
+  top: 60px; /* Adjust distance from the top as needed */
+  right: 0; /* Align to the right */
+  z-index: 1000;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Additional styling for mobile menu items */
+.mobile-menu div {
+  padding: 8px;
+  color: #fff; /* Adjust text color as needed */
+  border-bottom: 1px solid #333; /* Adjust border color as needed */
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer {
+  bottom: 0;
+  width: 100%;
+}

@@ -1,10 +1,11 @@
 // Footer.jsx
 
 import React from "react";
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebook, FaMailBulk, FaEnvelope, FaTwitter, FaAt, FaSubscript } from "react-icons/fa";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import workoIcon from "../../assets/worko.webp";
+import subStackIcon from "../../assets/icons/substack.svg";
 
 const Footer = () => {
   return (
@@ -105,21 +106,31 @@ const Footer = () => {
       </div>
 
       {/* Copyright and Social Media Icons */}
-      <div className="footer-bottom">
-        <div className="footer-copyright">
-          © 2023 Worko INC. All rights reserved.
+      <div className="footer-bottom md:flex-row flex-col md:items-end items-start">
+        <div className="footer-copyright md:mb-0 mb-4">
+          © 2023 Worko inc. All rights reserved.
         </div>
         <div className="footer-social-icons">
           {/* Use react-icons here */}
-          <a href="#" className="social-icon-link">
+          <Link to="https://www.linkedin.com/company/worko-team/" className="social-icon-link" target="_blank" title="LinkedIn">
             <FaLinkedin className="social-icon" />
-          </a>
-          <a href="#" className="social-icon-link">
+          </Link>
+          <Link to="mailto:weareworko@gmail.com" className="social-icon-link" target="_blank" title="Mail">
+            <FaEnvelope className="social-icon" />
+          </Link>
+          <Link to="https://x.com/weareworko" className="social-icon-link" target="_blank" title="X">
+            <FaTwitter className="social-icon" />
+          </Link>
+          <Link to="https://instagram.com/joinworko" className="social-icon-link" target="_blank" title="Instagram">
             <FaInstagram className="social-icon" />
-          </a>
-          <a href="#" className="social-icon-link">
-            <FaFacebook className="social-icon" />
-          </a>
+          </Link>
+          <Link to="https://www.threads.net/@joinworko" className="social-icon-link" target="_blank" title="Thread">
+            <FaAt className="social-icon" />
+          </Link>
+          <Link to="https://substack.com/@worko" className="social-icon-link" target="_blank" title="Substack">
+            {/* <FaSubscript className="" /> */}
+            <img className="social-icon h-5" src={subStackIcon} alt="" />
+          </Link>
         </div>
       </div>
     </div>
