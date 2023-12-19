@@ -23,9 +23,9 @@ function Main() {
                 <Route exact path="changelog" element={<Changelog />} />
                 <Route exact path="integration" element={<Integrations />} />
                 <Route exact path="pricing" element={<PricingPage />} />
-                <Route exact path="about" element={<About />} />
+                {/* <Route exact path="about" element={<About />} />
                 <Route exact path="blog" element={<Blog />} />
-                <Route exact path="contact" element={<Contact />} />
+                <Route exact path="contact" element={<Contact />} /> */}
                 <Route exact path="integrations/:intLink" element={<IntegrationsLink />} />
                 <Route exact path="legal/dpa" element={<Dpa />} />
                 <Route exact path="legal/privacy-policies" element={<PrivacyPolicy />} />
