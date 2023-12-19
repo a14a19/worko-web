@@ -71,13 +71,13 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             <li className="hover:text-gray-100">
-              <Link to="/about">About Us</Link>
+              <Link to="/">About Us</Link>
             </li>
             <li className="hover:text-gray-100">
-              <Link to="/contact">Contact</Link>
+              <Link to="/">Contact</Link>
             </li>
             <li className="hover:text-gray-100">
-              <Link to="/blog">Blog</Link>
+              <Link to="/">Blog</Link>
             </li>
           </ul>
         </div>
@@ -108,7 +108,7 @@ const Footer = () => {
       {/* Copyright and Social Media Icons */}
       <div className="footer-bottom md:flex-row flex-col md:items-end items-start">
         <div className="footer-copyright md:mb-0 mb-4">
-          © 2023 Worko inc. All rights reserved.
+          © 2023 Worko Inc. All rights reserved.
         </div>
         <div className="footer-social-icons">
           {/* Use react-icons here */}

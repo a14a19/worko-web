@@ -17,7 +17,7 @@ function HeroBannerCodeArea() {
                 <div className='hidden md:flex'>
                     <button className="flex items-center bg-[#121218] text-xs py-1 px-10 rounded-md shadow-[inset_0px_0px_5px_rgba(225,225,225,0.1)] cursor-default">
                         <LockClosedIcon className='h-4 me-3 text-gray-600' />
-                        <span className='cursor-text text-xs text-gray-600 font-semibold'>https://www.worko.io/workspace</span>
+                        <span className='cursor-text text-xs text-gray-600 font-semibold'>https://www.worko.live/workspace</span>
                     </button>
                 </div>
                 <div></div>

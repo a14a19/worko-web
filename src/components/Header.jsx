@@ -43,16 +43,22 @@ function Header() {
         aria-label="Global"
       >
         <div className="flex me-5">
-          <Link to="/" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5 flex items-center justify-start">
             <span className="sr-only">Worko</span>
             <img
-              className="h-8 w-auto rounded-full"
+              className="h-8 w-auto rounded-full md:me-0 me-2"
               src="https://ugc.production.linktr.ee/83ebb150-33fc-4639-8f2b-0bd315a84a1b_Worko.jpeg?io=true&size=avatar-v1_0"
               alt=""
             />
+            <div className="flex md:hidden font-bold">
+              Worko
+            </div>
           </Link>
         </div>
         <div className="flex md:hidden">
+          <button className="px-3 py-2 bg-[#000] rounded-lg me-3">
+            Get started
+          </button>
           {mobileMenuOpen ? (
             <button
               type="button"
@@ -63,14 +69,16 @@ function Header() {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           ) : (
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
+            <>
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+                onClick={() => setMobileMenuOpen(true)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </>
           )}
         </div>
         <Popover.Group className="hidden md:flex md:gap-x-8">
