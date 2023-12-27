@@ -4,6 +4,7 @@ import Main from "./pages/Main";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import Docs from "./pages/Docs";
+import LoginSignUp from "./components/LoginSignUp";
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
       <Routes>
         <Route path="/*" element={<Main />} />
         <Route path="/docs/*" element={<Docs />} />
+        <Route path="/login" element={<LoginSignUp />} />
+        <Route path="/sign-up" element={<LoginSignUp />} />
       </Routes>
     </>
   );

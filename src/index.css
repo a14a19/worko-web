@@ -10,8 +10,8 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.8);
   /* background-color: #933aff88; */
-  background-color: #09090F;
-  
+  background-color: #09090f;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #09090F;
+  background-color: #09090f;
   /* display: flex; */
   /* place-items: center; */
   /* min-width: 320px; */
@@ -45,14 +45,17 @@ body {
   overflow: hidden;
   -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
 }
-@keyframes runSlider{
+@keyframes runSlider {
   from {
     transform: translateX(0);
-  } to {
+  }
+  to {
     transform: translateX(calc(-165px * 15));
   }
 }
-
+.scrollHidden::-webkit-scrollbar {
+  display: none;
+}
 /* h1 {
   font-size: 3.2em;
   line-height: 1.1;

@@ -13,7 +13,7 @@ function HeroSection() {
             gsap.from(animaton.current, {
                 opacity: 0,
                 y: 200,
-                duration: 0.5,
+                duration: 0.75,
             })
         })
 
@@ -24,7 +24,9 @@ function HeroSection() {
         var answer = question.nextElementSibling;
         answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
     }
-
+    // ! 163fda
+    // !  163fdabf 
+    // ! blue color
     return (
         <aside className='max-w-[1140px] min-h-min mx-auto my-20' ref={animaton}>
             <div className="h-[486px] flex items-center justify-between flex-col py-20" style={{ backgroundImage: "radial-gradient(50.0% 85.0% at 50% 100%,rgb(120 8 255 / 70%) 0%,rgba(3,6,13,0) 70%)" }}>

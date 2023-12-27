@@ -46,11 +46,11 @@ function Header() {
           <Link to="/" className="-m-1.5 p-1.5 flex items-center justify-start">
             <span className="sr-only">Worko</span>
             <img
-              className="h-8 w-auto rounded-full md:me-0 me-2"
+              className="h-8 w-auto rounded-full me-2"
               src="https://ugc.production.linktr.ee/83ebb150-33fc-4639-8f2b-0bd315a84a1b_Worko.jpeg?io=true&size=avatar-v1_0"
               alt=""
             />
-            <div className="flex md:hidden font-bold">
+            <div className="flex font-bold">
               Worko
             </div>
           </Link>
@@ -133,12 +133,12 @@ function Header() {
                         </Transition>
                     </Popover> */}
 
-          <Link
+          {/* <Link
             to="/"
             className="text-sm font-semibold leading-6 hover:text-white"
           >
             Home
-          </Link>
+          </Link> */}
           <Link
             to="/integration"
             className="text-sm font-semibold leading-6 hover:text-white"
@@ -164,9 +164,12 @@ function Header() {
             Changelog
           </Link>
         </Popover.Group>
-        <div className="hidden md:flex md:flex-1 md:justify-end">
+        <div className="hidden md:flex md:flex-1 md:justify-end items-center">
+          <button className="px-3 py-2 bg-[#000] rounded-lg me-3">
+            Get started
+          </button>
           <Link
-            to="/"
+            to="/login"
             className="text-sm font-semibold leading-6 hover:text-white me-2"
           >
             Login
@@ -218,7 +221,7 @@ function Header() {
             </div>
             <div className="py-6">
               <Link
-                to="/"
+                to="/login"
                 className="-mx-3 block rounded-lg mx-6 py-2.5 text-base font-semibold leading-7 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
